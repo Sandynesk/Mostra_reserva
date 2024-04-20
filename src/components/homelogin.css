@@ -1,0 +1,226 @@
+/*TUDO ISSO AQUI SÃO COISAS RELACIONADAS À NAVBAR, MANTER ORGANIZADO*/
+.Logo {
+    width: 7%;
+    height: 6%;
+    margin-left: 10%; /* Valor negativo para mover a logo para a esquerda */
+}
+
+.bg-custom {
+    background-color: #6900f1; /* Cor de fundo personalizada para a barra de navegação */
+    height: 120px;
+}
+.btn-custom {
+    background-color: #F5B35D !important; /* Cor de fundo lilás claro */
+    color: #6900f1!important; /* Cor das letras brancas */
+    border: none !important; /* Remove a borda padrão do botão */
+    margin-left: 30.5%;
+    width: 15% !important;
+    height: 10% !important;
+    padding: 20px 20px !important; 
+    
+}
+
+.btn-custom:hover {
+    background-color: #330099 !important; /* Cor de fundo mais escura quando o mouse passa por cima */
+    color: #bacaff !important; /* Mantém a cor das letras brancas */
+    margin-left: 30.5%;
+    width: 15% !important;
+    height: 10% !important;
+}
+
+.navbar-nav .nav-link {
+    color: #bacaff !important; /* Define a cor do texto para branco e usa !important para prioridade */
+    background-color: transparent !important; /* Remove a cor de fundo e a borda do botão */
+    border: none !important; /* Remove a borda do botão */
+    padding: 0; /* Remove o preenchimento interno do botão */
+    font-size: 15px; /* Define o tamanho da fonte */
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.navbar-nav .nav-link:hover {
+  color: #330099 !important; /* Define a cor do texto do botão ao passar o mouse */
+  font-weight: bold;
+
+}
+/* Cabou a Navbar */
+
+
+/*ESSE ESPAÇO AQUI É PRA MEXER NO CSS DA INFORMAÇÃO CARALHO*/
+
+/* Define o estilo para o contêiner principal */
+.container-fluid.my-5 .p-5 {
+    background-color: #7419ec !important; /* Cor de fundo roxa */
+    width: 100%; /* Largura total */
+    padding: 2rem; /* Preenchimento interno */
+    margin: 0; /* Margem zero */
+    
+}
+
+/* Estilo para o título e texto */
+h1.text-body-emphasis, p.fs-5 {
+    color: #fff !important; /* Cor branca */
+    font-size: 1.5rem; /* Tamanho da fonte padrão */
+}
+
+/* Estilo específico para o título */
+h1.text-body-emphasis {
+    margin-top: 1%; /* Espaçamento superior */
+    font-size: 3rem; /* Tamanho da fonte do título */
+}
+
+/* Estilo para a logo */
+.logo-bottom {
+    display: block;
+    max-width: 7%; /* Largura máxima da logo */
+    width: 100%; /* Largura total */
+    margin: 20px auto 0; /* Margens */
+    margin-top: -8%; /* Margem superior negativa para ajuste de posição */
+}
+
+/* Estilo para o div dos botões */
+.d-inline-flex.mb-5 {
+    margin-top: 15px; /* Margem superior */
+}
+
+/* Estilo específico para o texto */
+p.fs-5 {
+    font-size: 1.5rem !important; /* Tamanho da fonte do texto */
+}
+
+/* Estilos responsivos para telas menores que 900px */
+@media (max-width: 900px) {
+    /* Estilos aqui */
+}
+
+/* Estilos para telas maiores ou iguais a 1200px */
+@media (min-width: 1200px) {
+    .logo-bottom {
+        max-width: 12%; /* Ajuste da largura máxima da logo para telas maiores */
+        margin-top: px; /* Ajuste da margem superior da logo para telas maiores */
+    }
+}
+
+/* Estilos para telas maiores ou iguais a 1600px */
+@media (min-width: 1600px) {
+    .logo-bottom {
+        max-width: 8%; /* Ajuste da largura máxima da logo para telas HD */
+        margin-top: px; /* Ajuste da margem superior da logo para telas HD */
+    }
+}
+
+.styled-svg {
+    color: var(--bs-indigo);
+}
+
+
+/*ACABOU A INFORMAÇÃO*/
+
+
+
+
+
+/*O card ali*/
+
+.card {
+    /* Substitui a imagem de fundo por um gradiente */
+    margin-top: 5% !important;
+    background: linear-gradient(to top left, #7419ec, rgb(158, 110, 255));
+    width: 72%; /* Reduz o tamanho do card pela metade */
+    height: 500px !important; /* Define uma altura fixa para o card */
+    margin: 0 auto; /* Centraliza o card na tela */
+    border: none !important;
+}
+
+.card-title, 
+.card-text{
+    padding: 3%;
+}
+
+
+/*Fim do card ali*/
+
+.Curioso{
+    margin-top: 10%;
+    margin-left: 30%;
+
+}
+
+
+
+/* "Mostra 2" */
+
+/* Frente */
+
+.slogan-container {
+    margin-left: 15%; /* Posiciona o container do slogan a 25% da borda esquerda */
+    margin-top: 5%;
+    
+  }
+  
+  #slogan-title {
+    width: 55%; /* Reduz a largura do título para 80% do seu contêiner */
+    text-align: left; /* Alinha o texto do título à esquerda */
+    font-size: 75px; /* Aumenta o tamanho da letra para 75 pixels */
+    font-weight: bold; 
+  }
+  
+  #slogan-subtitle {
+    /* Estilos para o subtitulo, se necessário */
+    font-size: 24px; /* Aumenta o tamanho da letra para 24 pixels */
+    display: block; /* Faz o subtitulo se comportar como bloco */
+    margin-top: 50px; /* Adiciona um espaçamento superior entre o título e o subtitulo */
+    color: #383737;
+    margin-left: -58%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+  
+  #btnQueroDireitos {
+    margin-left: -85%;
+    background-color: #F5B35D;
+    color: white;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    
+  }
+  
+  #btnQueroDireitos:hover {
+    background-color: #6a0dad; /* Altere a cor quando hover, se desejar */
+  }
+  
+
+  .slogan-container {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+  }
+   
+  .video-container {
+    position: relative;
+    width: 100%;
+    
+    /* Remova a altura fixa para permitir que o container se ajuste ao conteúdo */
+  }
+  
+  .video {
+    position: absolute;
+    top: -600px; /* Posiciona o vídeo no meio vertical do container */
+    left: 60%; /* Posiciona o vídeo no meio horizontal do container */
+    width: 700px;
+    height: 600px; /* Altura definida como 1000 pixels */
+    max-width: 500px;
+    object-fit: cover;
+    cursor: auto;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    object-position: 50% 50%;
+  }
+  
+  
+  
+
+/* Frente */
