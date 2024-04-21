@@ -2,7 +2,8 @@
 import React from 'react';
 import './homelogin.css'; // Importe o arquivo de estilos CSS
 import 'bootstrap/dist/css/bootstrap.min.css'; // Importe o CSS do Bootstrap
-import imgLogo from './Logo.png';
+import imgLogo from './Logo.png'
+import './media.css';
 
 function Navbar() {
   return (

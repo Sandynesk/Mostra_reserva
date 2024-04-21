@@ -1,6 +1,7 @@
 import React from 'react';
 import Interesselegal from './Interesselegal.png'; // Renomeie a variável de importação
 import './homelogin.css'; // Importe o arquivo CSS para estilizar o componente
+import './media.css'
 
 function Interesse() {
     return (
