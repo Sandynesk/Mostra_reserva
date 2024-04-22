@@ -185,7 +185,7 @@ p.fs-5 {
     display: flex;
     flex-direction: column;
     max-width: 400px;
-    margin-left: auto; /* Empurra o container para a direita */
+    margin-left: 850px; /* Empurra o container para a direita */
     margin-right: 150px; /* Define a margem direita como 0 */
     border: none; /* Roxo Escuro para a borda */
     border-radius: 15px;

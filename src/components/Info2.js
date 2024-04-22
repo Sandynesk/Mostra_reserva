@@ -4,17 +4,26 @@ import './homelogin.css';
 import './media.css';
 import imgMulher from './Mulher.jpg';
 
-function Info2() {
+function Infodois() {
     return (
 
-        <div>
-        <img src={imgMulher} className="imagem-mulher"></img>
+        <>
+        <div class="mulher-conteiner">
+            <div>
+                <h5>Comunique-se</h5>
+
+            </div>
+
+
         </div>
-      
+        
+        <div>
+                <img src={imgMulher} className="imagem-mulher" />
 
-
+            </div>
+        </>
     );
 }
 
 
-export default Info2;
+export default Infodois;

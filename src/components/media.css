@@ -6,6 +6,247 @@
 
 }
 
+
+/* Para telas maiores que 1366px e até 1680px */
+@media (min-width: 1367px) and (max-width: 1680px) {
+  .chat-container {
+    margin-left:675px; /* Valor específico para esta resolução */
+  }
+}
+
+/* Para telas de até 1366px */
+@media (max-width: 1366px) {
+  .chat-container {
+    margin-left:550px; /* Valor específico para esta resolução */
+  }
+}
+
+
+@media (max-width: 1680px) {
+
+  
+  .Logo {
+    width: 6%;
+    height: 6%;
+    margin-left: 10%; /* Valor negativo para mover a logo para a esquerda */
+}
+
+.bg-custom {
+    background-color: #6900f1; /* Cor de fundo personalizada para a barra de navegação */
+    height: 90px;
+}
+
+.btn-custom {
+    background-color: #F5B35D !important; /* Cor de fundo lilás claro */
+    color: #6900f1!important; /* Cor das letras brancas */
+    border: none !important; /* Remove a borda padrão do botão */
+    margin-left: 15%;
+    width: 20% !important;
+    height: 10% !important;
+    padding: 10px !important;
+    
+    
+}
+
+.btn-custom:hover {
+    background-color: #330099 !important; /* Cor de fundo mais escura quando o mouse passa por cima */
+    color: #bacaff !important; /* Mantém a cor das letras brancas */
+    margin-left: 15%;
+    width: 20% !important;
+    height: 10% !important;
+}
+
+
+
+/* Frente */
+
+.slogan-container {
+margin-left: 10%; /* Posiciona o container do slogan a 25% da borda esquerda */
+margin-top: 5%;
+
+}
+
+#slogan-title {
+width: 55%; /* Reduz a largura do título para 80% do seu contêiner */
+text-align: left; /* Alinha o texto do título à esquerda */
+font-size: 50px; /* Aumenta o tamanho da letra para 75 pixels */
+font-weight: bold; 
+margin-left: 40px;
+}
+
+#slogan-subtitle {
+/* Estilos para o subtitulo, se necessário */
+font-size: 20px; /* Aumenta o tamanho da letra para 24 pixels */
+display: block; /* Faz o subtitulo se comportar como bloco */
+margin-top: 50px; /* Adiciona um espaçamento superior entre o título e o subtitulo */
+color: #646464;
+margin-left: -54%;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#btnQueroDireitos {
+margin-left: -81.5%;
+background-color: #F5B35D;
+color: white;
+padding: 15px 15px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 70px;
+font-size: 15px;
+font-weight: bold;
+
+
+}
+
+#btnQueroDireitos:hover {
+background-color: #6a0dad; /* Altere a cor quando hover, se desejar */
+
+}
+
+
+.slogan-container {
+display: flex;
+align-items: center; /* Alinha os itens verticalmente */
+}
+
+.video-container {
+position: relative;
+width: 100%;
+
+/* Remova a altura fixa para permitir que o container se ajuste ao conteúdo */
+}
+
+.video {
+position: absolute;
+top: -450px; /* Posiciona o vídeo no meio vertical do container */
+left: 60%; /* Posiciona o vídeo no meio horizontal do container */
+width: 300px;
+height: 450px; /* Altura definida como 1000 pixels */
+max-width: 500px;
+object-fit: cover;
+cursor: auto;
+border-radius: 20px;
+background-color: rgba(0, 0, 0, 0);
+object-position: 50% 50%;
+margin-left: 8.2%;
+}
+
+.fundo {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -1; /* Defina um z-index menor para ficar atrás de outros elementos, se necessário */
+}
+   
+@keyframes slideUp {
+  from {
+      transform: translateY(20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.card {
+  animation: slideUp 0.5s ease-out forwards;
+  margin-top: 5% !important;
+  background: linear-gradient(to top left, #7419ec, rgb(158, 110, 255));
+  width: 75%; /* Reduz o tamanho do card pela metade */
+  height: 500px !important; /* Define uma altura fixa para o card */
+  margin: 0 auto; /* Centraliza o card na tela */
+  border: none !important;
+  box-shadow: 2px 10px 6px rgba(105, 105, 105, 0.5);
+}
+
+
+.card-title {
+  animation: pulse 2s infinite;
+  color: #330099 !important;
+  font-size: 45px !important;
+  font-weight: bold !important;
+  width: 60%;
+  text-align: left;
+  padding: 3%;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+
+.card-text{
+  padding: 3%;
+  font-size: 20px;
+  width: 55%;
+  text-align: left;
+  margin-top: -50px !important;
+  font-weight:600 !important;
+  margin-left: 20px;
+  
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin-right: 0px; /* Define a margem direita como 0 */
+  border: none; /* Roxo Escuro para a borda */
+  padding: 10px;
+  margin-top: -370px;
+  height: 370px;
+  
+}
+
+.imagem-mulher{
+
+  margin-left: 10.5%;
+}
+
+.message {
+  max-width: 80%;
+  margin-bottom: 12px;
+  padding: 8px 10px;
+  border-radius: 7.5px;
+  position: relative;
+  font-size: 14px;
+  line-height: 18px;
+  box-shadow: 2px 10px 6px rgba(34, 2, 6, 0.153);
+}
+
+.message:hover {
+  background-color: #1f1442; /* Um roxo ligeiramente diferente para o hover */
+  transition: background-color 0.3s;
+  /* Restante do seu CSS */
+}
+
+.user-message:hover {
+  background-color: #775310; /* Um roxo ligeiramente diferente para o hover */
+  transition: background-color 0.3s;
+}
+
+.user-message {
+  align-self: flex-end;
+  background-color: #F5B35D; /* Lilás Claro para mensagens do usuário */
+  border-bottom-right-radius: 0;
+  color: #ffffff; /* Roxo Escuro para o texto do usuário */
+}
+
+.consuweb-message {
+  align-self: flex-start;
+  background-color: #6900f1; /* Branco para mensagens do ConsuWeb */
+  border-bottom-left-radius: 0;
+  color:  #ffffff /* Cinza Escuro para o texto do ConsuWeb */
+}
+
+.message-text {
+  margin: 0;
+}
+  
+}
+
 /* Estilos para dispositivos com largura de tela até 1366px (HD) */
 @media (max-width: 1366px) {
 
@@ -55,15 +296,16 @@
     text-align: left; /* Alinha o texto do título à esquerda */
     font-size: 50px; /* Aumenta o tamanho da letra para 75 pixels */
     font-weight: bold; 
+    margin-left: 1px;
   }
   
   #slogan-subtitle {
     /* Estilos para o subtitulo, se necessário */
-    font-size: 17px; /* Aumenta o tamanho da letra para 24 pixels */
+    font-size: 20px; /* Aumenta o tamanho da letra para 24 pixels */
     display: block; /* Faz o subtitulo se comportar como bloco */
     margin-top: 50px; /* Adiciona um espaçamento superior entre o título e o subtitulo */
-    color: #383737;
-    margin-left: -60%;
+    color: #646464;
+    margin-left: -53%;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
   }
   
@@ -133,31 +375,115 @@
 
 /*O card ali*/
 
-.card {
-    /* Substitui a imagem de fundo por um gradiente */
-    margin-top: 10% !important;
-    background: linear-gradient(to top left, #7419ec, rgb(158, 110, 255));
-    width: 75%; /* Reduz o tamanho do card pela metade */
-    height: 500px !important; /* Define uma altura fixa para o card */
-    margin: 0 auto; /* Centraliza o card na tela */
-    border: none !important;
-}
-
-.card-title, 
-.card-text{
-    padding: 3%;
-}
 
 
 /*Fim do card ali*/
 }
 
+@keyframes slideUp {
+  from {
+      transform: translateY(20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.card {
+  animation: slideUp 0.5s ease-out forwards;
+  margin-top: 5% !important;
+  background: linear-gradient(to top left, #7419ec, rgb(158, 110, 255));
+  width: 75%; /* Reduz o tamanho do card pela metade */
+  height: 500px; /* Define uma altura fixa para o card */
+  margin: 0 auto; /* Centraliza o card na tela */
+  border: none;
+  box-shadow: 2px 10px 6px rgba(105, 105, 105, 0.5);
+}
+
+
+.card-title {
+  animation: pulse 2s infinite;
+  color: #330099 !important;
+  font-size: 45px !important;
+  font-weight: bold !important;
+  width: 60%;
+  text-align: left;
+  padding: 3%;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+
+
+.card-text{
+  padding: 3%;
+  font-size: 20px;
+  width: 55%;
+  text-align: left;
+  margin-top: -50px;
+  font-weight:600;
+  margin-left: 20px;
+  
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin-right: 0px; /* Define a margem direita como 0 */
+  border: none; /* Roxo Escuro para a borda */
+  padding: 10px;
+  margin-top: -370px;
+  height: 370px;
+  
+}
+
+
+.message {
+  max-width: 80%;
+  margin-bottom: 12px;
+  padding: 8px 10px;
+  border-radius: 7.5px;
+  position: relative;
+  font-size: 14px;
+  line-height: 18px;
+  box-shadow: 2px 10px 6px rgba(34, 2, 6, 0.153);
+}
+
+.message:hover {
+  background-color: #1f1442; /* Um roxo ligeiramente diferente para o hover */
+  transition: background-color 0.3s;
+  /* Restante do seu CSS */
+}
+
+.user-message:hover {
+  background-color: #775310; /* Um roxo ligeiramente diferente para o hover */
+  transition: background-color 0.3s;
+}
+
+.user-message {
+  align-self: flex-end;
+  background-color: #F5B35D; /* Lilás Claro para mensagens do usuário */
+  border-bottom-right-radius: 0;
+  color: #ffffff; /* Roxo Escuro para o texto do usuário */
+}
+
+.consuweb-message {
+  align-self: flex-start;
+  background-color: #6900f1; /* Branco para mensagens do ConsuWeb */
+  border-bottom-left-radius: 0;
+  color:  #ffffff /* Cinza Escuro para o texto do ConsuWeb */
+}
+
+.message-text {
+  margin: 0;
+}
+
 /* Estilos para dispositivos com largura de tela até 1280px (Notebook) */
 @media (max-width: 1280px) {
-    .fundo {
-        background-color: #447799; /* Cor de fundo para resolução de Notebook */
-        /* Outros estilos... */
-    }
+    
 }
 
 /* Estilos para dispositivos com largura de tela até 1024px (Desktops menores) */
