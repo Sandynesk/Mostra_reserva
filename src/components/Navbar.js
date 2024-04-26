@@ -1,9 +1,9 @@
 // Navbar.js
 import React from 'react';
-import './homelogin.css'; // Importe o arquivo de estilos CSS
+import './Css/Navbar.css'; // Importe o arquivo de estilos CSS
 import 'bootstrap/dist/css/bootstrap.min.css'; // Importe o CSS do Bootstrap
-import imgLogo from './Logo.png'
-import './media.css';
+import imgLogo from '../Fotos/Logo.png'
+
 
 function Navbar() {
   return (

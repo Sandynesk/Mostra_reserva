@@ -1,5 +1,4 @@
-import './homelogin.css';
-import './media.css'
+import './Css/Card.css'
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Importe o CSS do Bootstrap
 

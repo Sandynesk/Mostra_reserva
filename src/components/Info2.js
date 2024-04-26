@@ -1,8 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Importe o CSS do Bootstrap
-import './homelogin.css';
-import './media.css';
-import imgMulher from './Mulher.jpg';
+import './Css/Info2.css'
+import imgMulher from '../Fotos/Mulher.jpg';
 
 function Infodois() {
     return (

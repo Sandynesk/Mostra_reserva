@@ -1,7 +1,6 @@
 import React from 'react';
-import imgFundo from './Fundo.png'; // Renomeie a variável de importação
-import './homelogin.css'; // Importe o arquivo CSS para estilizar o componente
-import './media.css'
+import imgFundo from '../Fotos/Fundo.png'; // Renomeie a variável de importação
+
 
 function Fundo() {
     return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Blocao.css'; // Importe o arquivo CSS para estilizar os cards
+import './Css/Blocao.css'
 
 
     

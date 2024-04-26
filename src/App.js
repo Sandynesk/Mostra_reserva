@@ -3,7 +3,6 @@ import React from 'react';
 import Navbar from './components/Navbar.js'; // Importe o componente Navbar
 import Info from './components/Info';
 import Card from './components/Card.js';
-import Interesse from './components/Interesse';
 import Frente from './components/Frente.js';
 import Footer from './components/Footer.js';
 import Fundo from './components/Fundo.js';

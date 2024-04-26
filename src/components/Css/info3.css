@@ -48,7 +48,7 @@
     width: 795px !important;
     justify-content: center;
     align-items: center;
-    font-weight:;
+    margin-top: -100px;
     
   }
 
@@ -67,4 +67,41 @@
 
 
 
+  .conteiner-final{
+    margin-top: 300px;
+
+  }
+
+  .final{
+    position: relative;
+    top: -150px;
+    font-size: 50px;
+    font-weight: bold;
     
+    
+  }
+
+  .btn-final{
+    position: relative;
+    top: -100px;
+    background-color: #F5B35D !important;
+    color: #ffffff !important;
+    border: none !important;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 20px;
+  }
+
+  .btn-final:hover{
+    position: relative;
+    top: -100px;
+    background-color:#420f85 !important;
+    color: #F5B35D  !important;
+    border: none !important;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 20px;
+
+  }

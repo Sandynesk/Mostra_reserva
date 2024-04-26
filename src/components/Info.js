@@ -1,9 +1,8 @@
 
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Importe o CSS do Bootstrap
-import './homelogin.css';
-import './media.css'
-import imgLogo from './Logo.png';
+import './Css/info.css'
+import imgLogo from '../Fotos/Logo.png';
 
 
 function Info(){

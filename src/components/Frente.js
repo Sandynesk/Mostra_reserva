@@ -1,8 +1,7 @@
 import React from 'react';
-import vidNuvem from './Nuvem.mp4'; // Certifique-se de que o caminho do vídeo está correto
-import imgFundo from './Fundo.png'
-import './homelogin.css';
-import './media.css'
+import vidNuvem from '../Fotos/Nuvem.mp4'; // Certifique-se de que o caminho do vídeo está correto
+import './Css/Frente.css'
+
 
 function Frente() {
   return (

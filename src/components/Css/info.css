@@ -1,0 +1,75 @@
+
+/* Define o estilo para o contêiner principal */
+.container-fluid.my-5 .p-5 {
+    background-color: #7419ec !important; 
+    width: 100%; /* Largura total */
+    padding: 2rem; /* Preenchimento interno */
+    margin: 0 !important; /* Margem zero */
+    margin-top: auto !important;
+    
+}
+
+
+.container-fluid.my-5 .p-5 {
+    width: 100%; /* Largura total */
+    padding: 2rem; /* Preenchimento interno */
+    margin: 0; /* Margem zero */
+}
+
+/* Estilo para o título e texto */
+h1.text-body-emphasis, p.fs-5 {
+    color: #fff !important; /* Cor branca */
+    font-size: 1.5rem; /* Tamanho da fonte padrão */
+}
+
+/* Estilo específico para o título */
+h1.text-body-emphasis {
+    margin-top: 1%; /* Espaçamento superior */
+    font-size: 3rem; /* Tamanho da fonte do título */
+}
+
+/* Estilo para a logo */
+.logo-bottom {
+    display: block;
+    max-width: 7%; /* Largura máxima da logo */
+    width: 100%; /* Largura total */
+    margin: 20px auto 0; /* Margens */
+    margin-top: -8%; /* Margem superior negativa para ajuste de posição */
+}
+
+/* Estilo para o div dos botões */
+.d-inline-flex.mb-5 {
+    margin-top: 15px; /* Margem superior */
+}
+
+/* Estilo específico para o texto */
+p.fs-5 {
+    font-size: 1.5rem !important; /* Tamanho da fonte do texto */
+}
+
+
+.styled-svg {
+    color: var(--bs-indigo);
+}
+.btn-primary {
+  background-color: #F5B35D !important;
+  color: #6900f1 !important;
+  border: none !important;
+  
+}
+
+.btn-primary:hover{
+  background-color: #4600a1 !important;
+  color: #F5B35D !important;
+  border: none !important;
+}
+
+.btn-outline-secondary {
+  background-color: #4600a1 !important;
+  color: #F5B35D !important;
+  border: none !important;
+}
+.btn-outline-secondary:hover {
+  background-color: #F5B35D !important;
+  color: #6900f1 !important;
+}
