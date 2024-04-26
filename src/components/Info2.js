@@ -16,7 +16,7 @@ function Infodois() {
 O fórum do consuweb é um espaço vibrante e interativo onde consumidores de todos os lugares podem se reunir para compartilhar experiências e obter apoio. É um lugar onde as dúvidas são esclarecidas e as informações são compartilhadas, ajudando a criar uma comunidade de consumidores conscientes e informados.</h1>
                 </div>
                 <div>
-                    <h5 class="mulher-title-dois">Empodere-se junto com o consuweb!</h5>
+                    <h5 class="mulher-title-dois">Empodere-se junto com o consuweb</h5>
                     <p class="mulher-para">Ao se empoderar com o conhecimento e as ferramentas certas, você se torna um consumidor não apenas consciente, mas também ativo na defesa de seus direitos e na promoção de um mercado justo para todos. Junte-se ao ConsuWeb e faça parte de uma comunidade que está transformando o consumo em uma experiência segura, justa e satisfatória.</p>
                 </div>
             </div>

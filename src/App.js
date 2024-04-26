@@ -9,6 +9,7 @@ import Footer from './components/Footer.js';
 import Fundo from './components/Fundo.js';
 import Info2 from './components/Info2.js';
 import Blocao from './components/Blocao.js';
+import Info3 from './components/Info3.js';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Info2 />
       <Info />
       <Blocao />
+      <Info3 />
       <Footer/>
     {/* Outros conteúdos do seu aplicativo */}
     </div>

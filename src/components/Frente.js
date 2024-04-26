@@ -10,7 +10,7 @@ function Frente() {
       <div className="slogan-container">
         <div>
           <h1 id="slogan-title">Conheça seus direitos, exija transparência! Informação completa, consumidor seguro</h1>
-          <p id="slogan-subtitle">Empodere-se com conhecimento e faça escolhas conscientes.</p>
+          <p id="slogan-subtitle">Empodere-se com conhecimento e entre no nosso forum já</p>
           <button id="btnQueroDireitos">Quero meus direitos!</button>
 
         </div>
