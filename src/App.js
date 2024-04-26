@@ -8,7 +8,7 @@ import Frente from './components/Frente.js';
 import Footer from './components/Footer.js';
 import Fundo from './components/Fundo.js';
 import Info2 from './components/Info2.js';
-
+import Blocao from './components/Blocao.js';
 
 function App() {
   return (
@@ -18,8 +18,8 @@ function App() {
       <Frente />
       <Card />
       <Info2 />
-      <Interesse />
       <Info />
+      <Blocao />
       <Footer/>
     {/* Outros conteúdos do seu aplicativo */}
     </div>

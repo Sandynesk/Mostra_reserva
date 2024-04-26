@@ -1,0 +1,51 @@
+.bl-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.bl-card {
+    width: 300px;
+    margin: 10px;
+    background-color: #5900ff;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 20px;
+    cursor: default;
+}
+
+.bl-card:hover {
+    background-color: #1a0346;
+}
+
+.bl-card h1 {
+    font-size: 30px;
+    text-align: left;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.bl-card p {
+    font-size: 16px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.bl-container {
+    text-align: center; /* Centraliza o conteúdo */
+  }
+  
+  .bl-header {
+    margin-bottom: 20px; /* Espaçamento abaixo do cabeçalho */
+  }
+  
+  .bl-header h1 {
+    font-weight: bold;
+    margin-top: 100px;
+    font-size: 45px;
+    color:#2d0081
+  }
+  
