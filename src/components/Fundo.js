@@ -1,6 +1,6 @@
 import React from 'react';
 import imgFundo from '../Fotos/Fundo.png'; // Renomeie a variável de importação
-
+import './Css/Fundo.css'
 
 function Fundo() {
     return (
