@@ -108,5 +108,70 @@
 
 @media (min-width: 1550px) and (max-width: 1800px){
 
+  .info3-container {
+    position: relative; /* Define o posicionamento relativo para o container */
+    overflow: hidden; /* Oculta o conteúdo que ultrapassa o container */
+  }
   
+
+  
+  .info3-container .bg-body-custom {
+    background-color: #7419ec; /* cor roxa */
+    min-height: 900px; /* altura mínima da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative; /* Define o posicionamento relativo para o background roxo */
+    z-index: 1; /* Define a ordem de empilhamento */
+  }
+  
+  .info3-container .img-mulher {
+    width: 1000px; /* ajuste o tamanho conforme necessário */
+    height: auto; /* altura automática para manter proporções */
+    margin-top: auto; /* espaço entre a imagem e o texto */
+    position: absolute; /* Define o posicionamento absoluto para a imagem */
+    bottom: 0; /* Coloca a imagem no final do container */
+    left: 25%; /* Ajusta a posição horizontalmente */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    z-index: -1; /* Define a ordem de empilhamento para ficar atrás do conteúdo */
+  }
+  
+  .card-mulher2 {
+    width: 850px !important; /* Defina a largura do card conforme necessário */
+    height: 480px; /* Defina a altura do card conforme necessário */
+    position: absolute; /* Define o posicionamento absoluto para o card */
+    bottom: 30px; /* Ajusta a distância do fundo conforme necessário */
+    left: 72%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    border-radius: 20px;
+    top: 320px;
+    display: flex; /* Ativa o flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+  
+  
+  .card-titulo-mulher2 {
+    font-size: 23px;
+    text-align: left;
+    color: #ffffff;
+    width: 795px !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+    
+  }
+
+  .info3-container .text-saiba-direito {
+    color: #ffb95f !important;
+    font-size: 50px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    margin-bottom: 20px; /* Margem inferior para espaçamento */
+    text-align: center; /* Alinhamento centralizado */
+    position: absolute;
+    transform: translateX(-50%);
+    left: 70%;
+    top: 150px;
+    width: 50%;
+  }
 }

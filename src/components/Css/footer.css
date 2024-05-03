@@ -84,3 +84,16 @@
     margin-left: 80%;
     margin-top: -12%;
   }
+
+@media (min-width: 1550px) and (max-width: 1800px){
+
+  .footer-basic img{
+    width: 10%;
+    height: 9%;
+    position: relative;
+    top: 10px;
+  }
+
+
+  
+}

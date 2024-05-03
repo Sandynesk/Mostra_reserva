@@ -7,6 +7,7 @@ import imgLogo from '../Fotos/Logo.png'
 
 function Navbar() {
   return (
+    
     <nav className="navbar navbar-expand-lg bg-custom">
       <div className="container-fluid">
         <img src={imgLogo} className="Logo" alt="Logo" /> 
@@ -16,13 +17,13 @@ function Navbar() {
         <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
           <ul className="navbar-nav mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">lorem ipsum</a>
+              <a className="nav-link active" aria-current="page" href="#">Tela incial</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">lorem ipsum</a>
+              <a className="nav-link" href="#">Saiba mais!</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">lorem ipsum</a>
+              <a className="nav-link" href="#">Serviços</a>
             </li>
           </ul>
           <a className="btn btn-custom" href="#" role="button" style={{ fontWeight: 'bold' }}>Saiba seus direitos!</a>
@@ -31,5 +32,7 @@ function Navbar() {
     </nav>
   );
 }
+
+
 
 export default Navbar;
