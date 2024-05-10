@@ -9,11 +9,18 @@ import Fundo from './components/Fundo.js';
 import Info2 from './components/Info2.js';
 import Blocao from './components/Blocao.js';
 import Info3 from './components/Info3.js';
+import Login from './components/Login.js';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'; 
 
 function App() {
   return (
     <div className="App">
       <Navbar /> {/* Renderize o componente Navbar */}
+      <BrowserRouter>
+      <Routes>
+      <Route path='/login' element={<Login />} />
+      </Routes>
+    </BrowserRouter>
       <Fundo />
       <Frente />
       <Card />
