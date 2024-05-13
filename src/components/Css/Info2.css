@@ -57,6 +57,17 @@
     font-weight: 400;
 }
 
+@media (max-width: 1440px){
+
+    .imagem-mulher {
+        width: auto; /* ou um valor específico em pixels */
+        height: 400px; /* mantém a proporção da imagem */
+        margin-right: 900px;
+        border-radius: 20px;
+    }
+
+}
+
 @media (max-width: 1366px) {
 
 

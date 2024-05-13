@@ -7,7 +7,7 @@ function InnerCard() {
     return (
         <div className="chat-container">
             <div className="message user-message">
-                <p className="message-text"><strong>Usuário: </strong> Oi, como posso te ajudar hoje?</p>
+                <p className="message-text"><strong>Usuário: </strong> Oi, como pode me ajudar hoje?</p>
             </div>
             <div className="message consuweb-message">
                 <p className="message-text"><strong>ConsuWeb:</strong> Olá! Estou aqui para responder suas dúvidas sobre direitos do consumidor.</p>

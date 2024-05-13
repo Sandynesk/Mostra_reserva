@@ -1,8 +1,7 @@
 import React from 'react';
 import './Css/Login.css'
 import { Button, Form } from 'react-bootstrap';
-
-
+import Fotologin from '../Fotos/Fotologin.jpg';
 
 
 
@@ -15,7 +14,10 @@ const Login = () => {
 
 
   return ( //estrutura da pg comeca aqui
-    <div className="login-conteiner">
+      
+  
+  <div className="login-container">
+      <img src={Fotologin} alt="fotodeladinho" className="fotodeladinho"></img>
       <h2>Entre com sua conta</h2>  
       
       <Form onSubmit={handleLogin}> {/* qnd o user clicar em enviar esse formulario ira chamar a função handlelogin */}
@@ -55,6 +57,6 @@ Entrar
       </Form>
     </div>
   );
-};
+}
 
 export default Login;

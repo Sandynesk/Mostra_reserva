@@ -1,0 +1,170 @@
+.fotodeladinho{
+    width: 50px;
+    height: 150px;
+}
+
+.input-box input::placeholder {
+    color: #0a0a0a;
+  }
+  
+  .input-box input:focus {
+    background: transparent;
+  }
+  
+  
+  .login-conteiner .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -10px 2 15px;
+  }
+  
+  .remember-forgot label input{
+    accent-color: #030303;
+    margin-right: 4px;
+  }
+  
+  .remember-forgot a{
+    color: #070707;
+    margin-right: 4px;
+  
+  }
+  
+  .login-form button{
+    width: 100%;
+    height: 45%;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgb(0 , 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    background:black !important;
+    color: tomato;
+    padding: 15px 35px 18px 20px;
+  }
+  
+  .login-conteiner .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .register-link p a {
+    color:#0a0a0a;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  
+  .login-conteiner, .cadastro-form input::placeholder {
+    color: #fff;
+  }
+  
+  .input-box input:focus {
+    background: transparent;
+  }
+  
+  
+  .login-form {
+    width: 100%;
+    background: transparent;
+    padding: 30px 40px; /* Ajuste o espaçamento conforme necessário */
+    border-radius: 10px; /* Arredonde as bordas se desejar */
+  }
+  
+  
+  .login-form, .cadastro-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgb(255, 255, 255, .2);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  }
+  
+  /* Estilo para o título do formulário */
+  .login-form h2, .cadastro-form h2 {
+    margin-bottom: 20px;
+    color: aliceblue;
+  }
+  
+  /* Estilo para os campos de formulário e botões */
+  .login-form input[type="email"],
+  .login-form input[type="password"],
+  .cadastro-form input[type="email"],
+  .cadastro-form input[type="password"] {
+    margin-bottom: 15px;
+    
+  }
+  
+  /* Estilo para os botões */
+  .login-form .btn,
+  .cadastro-form .btn {
+    margin-top: 15px;
+  }
+  
+  /* Estilos para o link de cadastro */
+  .login-form hr {
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  
+  /* Estilos para as caixas de texto */
+  .input-box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgb(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 16px;
+  padding: 20px 45px 20px 20px;
+  color: #fff !important;
+  }
+  
+  /* Estilos para as caixas de texto do cadastroForm */
+  .mb-3 input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 20px 45px 20px 20px;
+    color: #fff !important;
+    }
+  
+    .mb-3 input:focus {
+      background: transparent;
+    }
+  
+  
+  .cadastro-form button{
+    width: 100%;
+    height: 45%;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgb(0 , 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    background: #e8f3f7 !important;
+    color: tomato;
+    padding: 15px 35px 18px 20px;
+  }
+  
+  
+  /* Defina o estilo do botão quando o mouse passa sobre ele */
+  .custom-button:hover {
+    background-color: #e0e0e0 !important; /* Cor de fundo ao passar o mouse */
+    color: #333 !important; /* Cor do texto ao passar o mouse */
+  }
