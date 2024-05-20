@@ -24,7 +24,7 @@ function Navbar() {
   <span className="navbar-toggler-icon"></span>
 </button>
 
-        <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <div className="collapse navbar-collapse justify-content-center" data-testid="navbarSupportedContent">
           <ul className="navbar-nav mb-2 mb-lg-0">
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#">Tela incial</a>

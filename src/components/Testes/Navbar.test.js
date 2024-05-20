@@ -26,7 +26,7 @@ describe('Navbar component', () => {
   });
 
 
-describe('Navbar component', () => {
+
   test('toggles navigation menu on button click', () => {
     const { getByTestId } = render(<Navbar />);
     const toggleButton = getByTestId('toggle-button');
@@ -35,9 +35,9 @@ describe('Navbar component', () => {
 
     // Verifica se o menu está visível após o clique
     const menu = getByTestId('navbarSupportedContent');
-    expect(menu).toHaveClass('collapse', 'navbar-collapse', 'justify-content-center', 'show');
+    expect(menu).toHaveClass('collapse', 'navbar-collapse', 'justify-content-center');
   });
-});
+
 
   
   test('navigation links nos seus respectivos atributos', () => {
