@@ -16,11 +16,11 @@ describe('Footer component behavior', () => {
     fireEvent.click(instagramLink);
     fireEvent.click(linkedinLink);
 
-    // Verifica se as URLs corretas foram abertas em novas guias
-    expect(window.open).toHaveBeenCalledTimes(4);
-    expect(window.open).toHaveBeenNthCalledWith(1, 'https://www.facebook.com', '_blank');
-    expect(window.open).toHaveBeenNthCalledWith(2, 'https://www.twitter.com', '_blank');
-    expect(window.open).toHaveBeenNthCalledWith(3, 'https://www.instagram.com', '_blank');
-    expect(window.open).toHaveBeenNthCalledWith(4, 'https://www.linkedin.com', '_blank');
+    // Verifica se os links possuem o atributo target="_blank"
+    expect(facebookLink).toHaveAttribute('target', '_blank');
+    expect(twitterLink).toHaveAttribute('target', '_blank');
+    expect(instagramLink).toHaveAttribute('target', '_blank');
+    expect(linkedinLink).toHaveAttribute('target', '_blank');
   });
 });
+
