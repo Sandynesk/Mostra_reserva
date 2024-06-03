@@ -1,13 +1,19 @@
-//comentar ccs
-// descer a box 
+
+
+// npm install bootstrap
+//npm install react-router-dom
+
 // colocar foto
 
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 import './Css/Login.css';
-import teste1 from '../Fotos/teste1.jpg';
+import Fundo from '../Fotos/Fundo.png';
 
 
+    
+
+ 
 
 const Login = () => {
 
@@ -17,10 +23,15 @@ const Login = () => {
   };
 
   return (
-
-
-      <div className="login-form">
+    
+    
+    <div className="fotoinha">
+      <img  src={Fundo}></img>
+    
+    <div className="login-form">
+       
         <h2>Bem vindo de volta!</h2>
+
         
         <Form onSubmit={handleLogin}>
           
@@ -40,7 +51,6 @@ const Login = () => {
           </div>
 
           <div className='remember-forgot'>
-            <label><input type='checkbox'/> Lembrar</label>
             <a href='#'> Esqueceu a senha?</a>
           </div>
 
@@ -57,6 +67,8 @@ const Login = () => {
 
 
         </Form>
+
+      </div>
       </div>
 
 

@@ -1,11 +1,26 @@
-.body{
-  width: 100%;
-  height: 100%;
+*{
   margin: 0;
-  background-color: black;
+}
+.fotoinha{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+
 
 }
+/* 
+.body{
+  background-image: url('../../Fotos/Fundo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 50px;
+  position: relative;
 
+}
+ */
 /* Estilo para o título do formulário */
 .login-form h2{
   margin-bottom: 20px;
@@ -29,11 +44,7 @@
   margin: -10px 2 15px;
 }
 
-/* caixinha do esqueceu senha */
-.remember-forgot label input{
-  accent-color: #ffff;
-  margin-right: 4px;
-}
+
 
 /* texto esqueceu senha */
 .remember-forgot a{
@@ -90,7 +101,7 @@
   width: 100%;
   background: rgb(0, 0, 0);
   position: relative;
-  top: 200px;
+  bottom: 800px;
   padding: 30px 40px; /* Ajuste o espaçamento conforme necessário */
   border-radius: 10px; /* Arredonde as bordas se desejar */
 
@@ -103,7 +114,7 @@
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
-  background-color: aquamarine;
+  background-color: white!important;
   border-radius: 5px;
   background: transparent;
   color: rgb(0, 0, 0);
