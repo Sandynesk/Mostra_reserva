@@ -54,3 +54,55 @@
     
   }
   
+
+  @media only screen and (min-width: 1360px) {
+    .bl-card-container {
+        padding: 0 20px; /* Ajusta o padding */
+        margin-top: 100px; /* Ajusta a margem superior */
+    }
+
+    .bl-card {
+        width: 350px; /* Ajusta a largura do card */
+        height: 400px; /* Ajusta a altura do card */
+    }
+
+    .bl-card h1 {
+        font-size: 35px; /* Ajusta o tamanho da fonte do título */
+        margin-left: 0; /* Remove a margem esquerda */
+    }
+
+    .bl-card p {
+        font-size: 22px; /* Ajusta o tamanho da fonte do parágrafo */
+        margin-left: 0; /* Remove a margem esquerda */
+    }
+
+    .bl-header h1 {
+        margin-top: 50px; /* Ajusta a margem superior do cabeçalho */
+        font-size: 60px; /* Ajusta o tamanho da fonte do cabeçalho */
+    }
+}
+
+
+@media only screen and (min-width: 1600px) {
+    .bl-card-container {
+        padding: 0 50px; /* Ajusta o padding */
+    }
+
+    .bl-card {
+        width: 450px; /* Ajusta a largura do card */
+        height: 450px; /* Ajusta a altura do card */
+    }
+
+    .bl-card h1 {
+        font-size: 40px; /* Ajusta o tamanho da fonte do título */
+    }
+
+    .bl-card p {
+        font-size: 24px; /* Ajusta o tamanho da fonte do parágrafo */
+    }
+
+    .bl-header h1 {
+        margin-top: 70px; /* Ajusta a margem superior do cabeçalho */
+        font-size: 65px; /* Ajusta o tamanho da fonte do cabeçalho */
+    }
+}

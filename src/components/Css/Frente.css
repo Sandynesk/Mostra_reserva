@@ -68,6 +68,10 @@
   
   
 
+
+
+
+
 @media (min-width: 1550px) and (max-width: 1800px){
   .slogan-container {
     margin-left: 15%; /* Posiciona o container do slogan a 25% da borda esquerda */
@@ -224,4 +228,80 @@
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   /* Estilos para grandes dispositivos */
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1440px){
+
+  .slogan-container {
+    margin-left: 15%; /* Posiciona o container do slogan a 25% da borda esquerda */
+    margin-top: 5%;
+    
+  }
+  
+  #slogan-title {
+    width: 60%; /* Reduz a largura do título para 80% do seu contêiner */
+    text-align: left; /* Alinha o texto do título à esquerda */
+    font-size: 47px; /* Aumenta o tamanho da letra para 75 pixels */
+    font-weight: bold; 
+  }
+  
+  #slogan-subtitle {
+    /* Estilos para o subtitulo, se necessário */
+    font-size: 24px; /* Aumenta o tamanho da letra para 24 pixels */
+    display: block; /* Faz o subtitulo se comportar como bloco */
+    color: #383737;
+    position: relative;
+    left: 70px;
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+  
+  #btnQueroDireitos {
+    background-color: #F5B35D;
+    color: white;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    left: 25px;
+    
+  }
+  
+  #btnQueroDireitos:hover {
+    background-color: #6a0dad; /* Altere a cor quando hover, se desejar */
+  }
+
+  .slogan-container {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+  }
+   
+  .video-container {
+    position: relative;
+    width: 100%;
+    
+    /* Remova a altura fixa para permitir que o container se ajuste ao conteúdo */
+  }
+  
+  .video {
+    position: absolute;
+    top: -430px; /* Posiciona o vídeo no meio vertical do container */
+    left: 65%; /* Posiciona o vídeo no meio horizontal do container */
+    width: 250px;
+    height: 400px; /* Altura definida como 1000 pixels */
+    max-width: 500px;
+    object-fit: cover;
+    cursor: auto;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    object-position: 50% 50%;
+  }
+  
+
+
+
+
 }

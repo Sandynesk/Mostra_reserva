@@ -106,6 +106,41 @@
 
   }
 
+  @media only screen and (max-width: 1366px) {
+    /* Estilos para resolução até 1400px */
+    .info3-container .img-mulher {
+        left: 20%; /* Ajuste para 1400px */
+        height: 100%;
+        width: 60%;
+    }
+
+    .card-mulher2 {
+        left: 70%; /* Ajuste para 1400px */
+        top: 20%;
+    }
+
+    .card-titulo-mulher2 {
+        width: 680px !important; /* Ajuste para 1400px */
+        font-size: 20px;
+    }
+
+    .info3-container .text-saiba-direito {
+        left: 65%; /* Ajuste para 1400px */
+        top: 5%;
+        font-size: 40px;
+    }
+
+    .info3-container .bg-body-custom {
+      background-color: #7419ec; /* cor roxa */
+      min-height: 500px; /* altura mínima da tela */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative; /* Define o posicionamento relativo para o background roxo */
+      z-index: 1; /* Define a ordem de empilhamento */
+    }
+}
+
 @media (min-width: 1550px) and (max-width: 1800px){
 
   .info3-container {

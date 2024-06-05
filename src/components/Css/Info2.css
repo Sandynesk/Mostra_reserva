@@ -74,6 +74,54 @@
 
 }
 
+@media (min-width: 1440px) and (max-width: 1530px){
+
+
+
+
+}
+
+
+@media (min-width: 1400px) and (max-width: 1440px) {
+    .imagem-mulher {
+        margin-right: 670px;
+        height: 25%;
+        width: 25%;
+    }
+
+    .mulher-title { /* comuniquise */
+        font-size: 45px;
+        top: 50px;
+        left: 70px;
+    }
+
+    .mulher-title-dois { /* Empodere-se */
+        top: 1470px;
+        left: 623px;
+        font-size: 31px;
+    }
+
+    .card-mulher {
+        top: 1550px;
+        left: 626px;
+        height: 22%;
+        width: 40%;
+    }
+
+    .card-titulo-mulher {
+        left: 26px;
+        top: 20px;
+        font-size: 15px;
+    }
+
+    .mulher-para {
+        top: 1300px;
+        left: 640px;
+        font-size: medium;
+    }
+}
+
+
 @media (min-width: 1550px) and (max-width: 1800px){
 
     .imagem-mulher {
