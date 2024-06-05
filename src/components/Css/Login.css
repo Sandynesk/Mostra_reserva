@@ -10,17 +10,10 @@
 
 
 }
-/* 
-.body{
-  background-image: url('../../Fotos/Fundo.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top center;
-  height: 50px;
-  position: relative;
 
-}
- */
+
+
+
 /* Estilo para o título do formulário */
 .login-form h2{
   margin-bottom: 20px;
@@ -50,9 +43,10 @@
 .remember-forgot a{
   color: rgb(10, 43, 235);
   margin-right: 10px;
-  text-decoration: underline;
+  font-weight: 600;
+  text-decoration: none;
   width: 9px;
-  margin-left: 57px;
+  margin-right: 1px;
   
 
 
@@ -60,7 +54,7 @@
 }
 /* botao de entrar*/
 .login-form button{
-  width: 100%;
+  width: 50%;
   height: 45%;
   border: none;
   outline: none;
@@ -68,10 +62,10 @@
   box-shadow: 0 0 10px rgb(0 , 0, 0, .1);
   cursor: pointer;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 400px;
   background: #604cde !important;
   color: rgb(255, 255, 255)!important;
-  padding: 15px 35px 18px 20px;
+  padding: 15px 35px 18px 35px;
 }
 
 /* hoover do botao de entrar*/
@@ -81,7 +75,7 @@
 
 }
 
-/* link do registre-se e o espacamento com o botao de entrar */
+/* link do cadastre-se e o espacamento com o botao de entrar */
 .login-form .register-link{
   font-size: 14.5px;
   text-align: center;
@@ -89,7 +83,7 @@
   
 }
 
-/* texto do registro */
+/* texto do cadastre-se */
 .register-link p a {
   color:rgb(10, 43, 235);
   text-decoration: none;
@@ -130,6 +124,8 @@
   margin-bottom: 15px;
   border-color: black;
   border-width: 1px;
+  border-radius: 15px;
+  
  
 }
 
@@ -157,3 +153,7 @@ color: rgb(0, 0, 0) !important;
 border: 2px solid black;
 }
 
+/* estilo para os boxes de redefinir senha */
+.input-box-red{
+  text-align: start;
+}

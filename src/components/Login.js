@@ -11,9 +11,7 @@ import './Css/Login.css';
 import Fundo from '../Fotos/Fundo.png';
 
 
-    
 
- 
 
 const Login = () => {
 
@@ -24,7 +22,7 @@ const Login = () => {
 
   return (
     
-    
+
     <div className="fotoinha">
       <img  src={Fundo}></img>
     
@@ -51,7 +49,7 @@ const Login = () => {
           </div>
 
           <div className='remember-forgot'>
-            <a href='#'> Esqueceu a senha?</a>
+            <a href='/password'> Esqueceu a senha?</a>
           </div>
 
           <Button variant="primary" type="submit" block className="custom-button">
@@ -70,7 +68,6 @@ const Login = () => {
 
       </div>
       </div>
-
 
 
   );
