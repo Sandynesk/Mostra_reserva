@@ -27,7 +27,7 @@ function Navbar() {
         <div className="collapse navbar-collapse justify-content-center" data-testid="navbarSupportedContent">
           <ul className="navbar-nav mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">Tela incial</a>
+              <a className="nav-link active" aria-current="page" href="/">Tela incial</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="saiba">Saiba mais!</a>
