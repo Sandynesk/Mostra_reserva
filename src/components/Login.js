@@ -1,7 +1,7 @@
 
 
 // npm install bootstrap
-// npm install react-router-dom
+// npm install react-router-dom@5
 
 // colocar foto
 
