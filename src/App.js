@@ -14,9 +14,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/saiba" element={<Saiba />} /> {/* Corrija o caminho para "/saiba" */}
-          <Route path='/login' component={Login} />
-          <Route path='/cadastro' component={Cadastro} />
-          <Route path='/password' component={Senha} />
+          <Route path='/login' element={<Login/>} />
+          <Route path='/cadastro' element={<Cadastro/>} />
+          <Route path='/password' element={<Senha/>} />
           {/* Outras rotas podem ser adicionadas aqui */}
         </Routes>
       </div>
