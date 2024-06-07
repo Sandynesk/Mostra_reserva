@@ -57,28 +57,191 @@
     font-weight: 400;
 }
 
-@media (max-width: 1366px) {
-
-
-    .card-mulher {
-        background-color: rgb(255, 255, 255); /* Define o fundo do card para branco */
-        width: 675px; /* Defina a largura do card conforme necessário */
-        height:217px; /* Defina a altura do card conforme necessário */
-        box-shadow: 0px 0px 10px #1f144283; /* Adiciona uma sombra ao card */
-        position: absolute; /* Define o posicionamento absoluto */
-        top: 1610px; /* Ajusta a distância do topo conforme necessário */
-        left: 500px; /* Ajusta a distância da esquerda conforme necessário */
-        border-radius: 20px;
-     
-    }
+@media screen and (min-width: 800px) and (max-width: 1024px){
 
 }
 
-@media (min-width: 1440px) and (max-width: 1530px){
+@media screen and (min-width: 1024px) and (max-width: 1152px){
+    .imagem-mulher {
+        width: auto; /* ou um valor específico em pixels */
+        height: 460px; /* mantém a proporção da imagem */
+        margin-right: 550px;
+        border-radius: 20px;
+    }
+    
+    .mulher-title {
+        font-size: 50px;
+        font-weight: bold;
+        position: relative; /* Torna o elemento posicionado de forma relativa ao seu contêiner */
+        top: 60px; /* Move o elemento para baixo em relação à sua posição original */
+        left: 120px;
+    }
+    
+    .mulher-title-dois{
+    
+        font-size: 30px;
+        font-weight: bold;
+        position: absolute; /* Torna o elemento posicionado de forma relativa ao seu contêiner */
+        top: 1555px; /* Move o elemento para baixo em relação à sua posição original */
+        left: 510px;
+        color:#383737
+    }
+    
+    .card-mulher {
+        background-color: rgb(255, 255, 255); /* Define o fundo do card para branco */
+        width: 500px; /* Defina a largura do card conforme necessário */
+        height: 170px; /* Defina a altura do card conforme necessário */
+        box-shadow: 0px 0px 10px #1f144283; /* Adiciona uma sombra ao card */
+        position: absolute; /* Define o posicionamento absoluto */
+        top: 1365px; /* Ajusta a distância do topo conforme necessário */
+        left: 510px; /* Ajusta a distância da esquerda conforme necessário */
+        border-radius: 20px;
+     
+    }
+    
+    .card-titulo-mulher{
+        font-size: 15px;
+        text-align: left;
+        width: 92.5%;
+        position: relative;
+        left: 20px;
+        top: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .mulher-para{
+        font-size: 15px;
+        position: absolute; /* Torna o elemento posicionado de forma relativa ao seu contêiner */
+        top: 1610px; /* Move o elemento para baixo em relação à sua posição original */
+        left: 510px;
+        text-align: left;
+        width: 37%;
+        font-weight: 400;
+    }
+}
+
+@media screen and (min-width: 1176px) and (max-width: 1280px){
+    .imagem-mulher {
+        width: auto; /* ou um valor específico em pixels */
+        height: 560px; /* mantém a proporção da imagem */
+        margin-right: 600px;
+        border-radius: 20px;
+    }
+    
+    .mulher-title {
+        font-size: 60px;
+        font-weight: bold;
+        position: relative; /* Torna o elemento posicionado de forma relativa ao seu contêiner */
+        top: 70px; /* Move o elemento para baixo em relação à sua posição original */
+        left: 150px;
+    }
+    
+    .mulher-title-dois{
+    
+        font-size: 30px;
+        font-weight: bold;
+        position: absolute; /* Torna o elemento posicionado de forma relativa ao seu contêiner */
+        top: 1595px; /* Move o elemento para baixo em relação à sua posição original */
+        left: 580px;
+        color:#383737
+    }
+    
+    .card-mulher {
+        background-color: rgb(255, 255, 255); /* Define o fundo do card para branco */
+        width: 500px; /* Defina a largura do card conforme necessário */
+        height: 170px; /* Defina a altura do card conforme necessário */
+        box-shadow: 0px 0px 10px #1f144283; /* Adiciona uma sombra ao card */
+        position: absolute; /* Define o posicionamento absoluto */
+        top: 1395px; /* Ajusta a distância do topo conforme necessário */
+        left: 580px; /* Ajusta a distância da esquerda conforme necessário */
+        border-radius: 20px;
+     
+    }
+    
+    .card-titulo-mulher{
+        font-size: 15px;
+        text-align: left;
+        width: 92.5%;
+        position: relative;
+        left: 20px;
+        top: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .mulher-para{
+        font-size: 19px;
+        position: absolute; /* Torna o elemento posicionado de forma relativa ao seu contêiner */
+        top: 1650px; /* Move o elemento para baixo em relação à sua posição original */
+        left: 580px;
+        text-align: left;
+        width: 37%;
+        font-weight: 400;
+    }
 
 
+}
+@media (min-width: 1360px) and (max-width: 1366px){
 
-
+    .imagem-mulher {
+        width: auto; /* ou um valor específico em pixels */
+        height: 600px; /* mantém a proporção da imagem */
+        margin-right: 660px;
+        border-radius: 20px;
+    }
+    
+    .mulher-title {
+        font-size: 70px;
+        font-weight: bold;
+        position: relative; /* Torna o elemento posicionado de forma relativa ao seu contêiner */
+        top: 70px; /* Move o elemento para baixo em relação à sua posição original */
+        left: 150px;
+    }
+    
+    .mulher-title-dois{
+    
+        font-size: 30px;
+        font-weight: bold;
+        position: absolute; /* Torna o elemento posicionado de forma relativa ao seu contêiner */
+        top: 1595px; /* Move o elemento para baixo em relação à sua posição original */
+        left: 595px;
+        color:#383737
+    }
+    
+    .card-mulher {
+        background-color: rgb(255, 255, 255); /* Define o fundo do card para branco */
+        width: 600px; /* Defina a largura do card conforme necessário */
+        height:150px; /* Defina a altura do card conforme necessário */
+        box-shadow: 0px 0px 10px #1f144283; /* Adiciona uma sombra ao card */
+        position: absolute; /* Define o posicionamento absoluto */
+        top: 1395px; /* Ajusta a distância do topo conforme necessário */
+        left: 590px; /* Ajusta a distância da esquerda conforme necessário */
+        border-radius: 20px;
+     
+    }
+    
+    .card-titulo-mulher{
+        font-size: 15px;
+        text-align: left;
+        width: 92.5%;
+        position: relative;
+        left: 30px;
+        top: 22px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .mulher-para{
+        font-size: 20px;
+        position: absolute; /* Torna o elemento posicionado de forma relativa ao seu contêiner */
+        top: 1650px; /* Move o elemento para baixo em relação à sua posição original */
+        left: 595px;
+        text-align: left;
+        width: 37%;
+        font-weight: 400;
+    }
+    
 }
 
 

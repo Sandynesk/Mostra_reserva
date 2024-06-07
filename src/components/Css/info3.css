@@ -141,6 +141,56 @@
     }
 }
 
+@media (min-width: 800px) and (max-width: 1024px){
+
+  .info3-container .img-mulher {
+    left: 20%; /* Ajuste para 1400px */
+    height: 70%;
+    width: 55%;
+}
+
+  .info3-container .text-saiba-direito {
+    left: 75%; /* Ajuste para 1400px */
+    font-size: 35px;
+    margin-bottom: 10%;
+}
+
+.card-titulo-mulher2 {
+  position: relative;
+  font-size: 14px;
+  text-align: justify;
+  color: #ffffff;
+  width: 400px !important;
+  justify-content: end;
+  align-items: end;
+  margin-top: 5px;
+  left: 5px;
+}
+
+}
+
+@media (min-width: 1400px) and (max-width: 1440px){
+
+  .info3-container .text-saiba-direito {
+    left: 75%; /* Ajuste para 1400px */
+    top: 5%;
+    font-size: 70px;
+}
+
+.card-titulo-mulher2 {
+  position: relative;
+  font-size: 25px;
+  text-align: justify;
+  color: #ffffff;
+  width: 600px !important;
+  justify-content: end;
+  align-items: end;
+  margin-top: 10px;
+  left: 35px;
+}
+
+}
+
 @media (min-width: 1550px) and (max-width: 1800px){
 
   .info3-container {

@@ -90,7 +90,7 @@ html, body {
 
 }
 
-@media (max-width: 1366px){
+@media (min-width: 1360px) and (max-width: 1366px){
     
     .Logo {
         width: 6%;
