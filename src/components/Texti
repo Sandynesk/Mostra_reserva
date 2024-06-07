@@ -1,0 +1,9 @@
+import Navbar from './components/Navbar.js'; // Importe o componente Navbar
+import Info from './components/Info';
+import Card from './components/Card.js';
+import Frente from './components/Frente.js';
+import Footer from './components/Footer.js';
+import Fundo from './components/Fundo.js';
+import Info2 from './components/Info2.js';
+import Blocao from './components/Blocao.js';
+import Info3 from './components/Info3.js';

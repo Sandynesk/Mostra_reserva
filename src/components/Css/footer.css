@@ -6,6 +6,7 @@
     color: #fff;
     text-align: center;
   }
+  
   .footer-basic ul {
     padding: 0;
     list-style: none;
@@ -14,6 +15,7 @@
     line-height: 1.6;
     margin-bottom: 0;
   }
+  
   .footer-basic li {
     padding: 0 10px;
   }
@@ -84,6 +86,18 @@
     margin-left: 80%;
     margin-top: -12%;
   }
+
+  body {
+    display: flex;
+    flex-direction: column;  /* Organiza o conteúdo em coluna */
+    min-height: 80vh;  /* Define a altura mínima para a altura da viewport */
+  }
+  
+  .footer-basic {
+    margin-top: auto;  /* Empurra o rodapé para baixo */
+    /* restante do seu código CSS para .footer-basic */
+  }
+  
 
 @media (min-width: 1550px) and (max-width: 1800px){
 

@@ -1,0 +1,94 @@
+.bloco-roxo {
+    position: relative;
+    top: 100px;
+    color: white; /* Cor do texto branca */
+}
+
+.bloco-roxo #Titulo-frente{
+    font-weight: bold;
+    font-size: 84px;
+}
+
+
+.bloco-roxo #SubTitulo-frente{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.Saiba-conteiner{
+    
+    height: 420px;
+    width: 100%;
+    background-color:  #6900f1;
+}
+  
+.consu {
+    color: white /* Altere para a cor desejada */
+}
+
+.web {
+    color: #F5B35D; /* Altere para a cor desejada */
+}
+
+.melhor{
+    color: #F5B35D;
+}
+
+.Saiba-conteiner-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   margin-top: 100px;
+   margin-bottom: 300px; /* Aumenta a margem inferior para 20 pixels */
+}
+
+.Saiba-conteiner-info #titulo-saiba{
+    position: relative;
+    right: 200px;
+    font-size: 60px;
+   
+    
+}
+
+.Saiba-conteiner-info #sub-saiba{
+    font-weight: bold;
+    position: relative;
+    top: 50px;
+    font-size: 20px;
+    width: 30%;
+    right: 200px;
+    
+}
+
+.Mulher {
+    z-index: -1;
+    position: absolute;
+    left: 1200px;
+    width: auto;
+    height: 1100px;
+    top: 500px;
+    float: left; /* Adiciona a propriedade float */
+}
+
+.Bloquinho-conteiner{
+    background-color: #6900f1;
+    height: 500px;
+}
+
+.Bloquinho-conteiner #Titulo-bloquinho{
+    font-weight: bold;
+    font-size: 84px;
+    position: relative;
+    top: 150px;
+    color: white;
+}
+
+.Bloquinho-conteiner #SubTitulo-frente-bloquinho{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top: 150px;
+}

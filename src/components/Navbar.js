@@ -30,7 +30,7 @@ function Navbar() {
               <a className="nav-link active" aria-current="page" href="#">Tela incial</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Saiba mais!</a>
+              <a className="nav-link" href="saiba">Saiba mais!</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">Serviços</a>

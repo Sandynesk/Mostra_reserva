@@ -1,29 +1,20 @@
 import './App.css';
 import React from 'react';
-import Navbar from './components/Navbar.js'; // Importe o componente Navbar
-import Info from './components/Info';
-import Card from './components/Card.js';
-import Frente from './components/Frente.js';
-import Footer from './components/Footer.js';
-import Fundo from './components/Fundo.js';
-import Info2 from './components/Info2.js';
-import Blocao from './components/Blocao.js';
-import Info3 from './components/Info3.js';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import Saiba from './components/Saiba';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar /> {/* Renderize o componente Navbar */}
-      <Fundo />
-      <Frente />
-      <Card />
-      <Info2 />
-      <Info />
-      <Blocao />
-      <Info3 />
-      <Footer/>
-    {/* Outros conteúdos do seu aplicativo */}
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="saiba" element={<Saiba/>} />
+          {/* Outras rotas podem ser adicionadas aqui */}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
