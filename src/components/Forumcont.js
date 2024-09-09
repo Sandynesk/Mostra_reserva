@@ -2,9 +2,10 @@ import React from "react";
 import './Css/Forumcont.css';
 
 function Forumcont(){
-
+    return (
+            
     <body>
-        <div class="container">
+    <div class="container">
             <h1>Fórum Simples</h1>
             <div class="message-form">
                 <h2>Nova Mensagem</h2>
@@ -17,6 +18,7 @@ function Forumcont(){
             </div>
         </div>
     </body>
+    )
 
 }
 
