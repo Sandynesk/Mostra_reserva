@@ -1,77 +1,43 @@
-
-
-// npm install bootstrap
-// npm install react-router-dom@5
-
-// colocar foto
-
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
-import './Css/Login.css';
-import Fundo from '../Fotos/Fundo.png';
-
-
-
+import './Css/Login.css';  // Certifique-se de que o caminho está correto
+import Fundo2 from '../Fotos/Fundo2.jpg';  // Substitua pelo caminho correto da sua imagem
 
 const Login = () => {
-
   const handleLogin = (e) => {
     e.preventDefault();
     // Lógica de autenticação aqui           
   };
 
   return (
-    
+    <div className="login-container">
+      <div className="login-background">
+        <div className="login-form-container">
+          <Form onSubmit={handleLogin}>
+            <h2 className="login-title">Login</h2>
+            <h5 className='login-subtitle'>
+              Olá, seja bem-vindo!
+            </h5>
 
-    <div className="fotoinha">
-      <img  src={Fundo}></img>
-    
-    <div className="login-form">
-       
-        <h2>Bem vindo de volta!</h2>
+            <div className='Forms'>
+              <Form.Group controlId="formBasicEmail">
+                <Form.Control type="email" placeholder="Enter email" required />
+              </Form.Group>
+              <Form.Group controlId="formBasicPassword">
+                <Form.Control type="password" placeholder="Password" required />
+              </Form.Group>
+            </div>
 
-        
-        <Form onSubmit={handleLogin}>
-          
-          <div className='input-box'>
-
-    <Form.Group controlId="formBasicEmail">
-  
-            <Form.Control type="email" placeholder="Email" />
-          </Form.Group>
-          </div>
-
-          <div className='input-box'>
-          <Form.Group controlId="formBasicPassword">
-  
-            <Form.Control type="password" placeholder="Senha" />
-          </Form.Group>
-          </div>
-
-          <div className='remember-forgot'>
-            <a href='/password'> Esqueceu a senha?</a>
-          </div>
-
-          <Button variant="primary" type="submit" block className="custom-button">
-    Entrar
-    </Button>
-
-
-          < div className='register-link'>
-            <p> Não tem uma conta? <a href="/cadastro">Cadastre-se</a></p>
-          </div>
-
-
-
-
-        </Form>
-
+            <div className='Enviar'>
+              <Button variant="primary" type="submit">
+                Submit
+              </Button>
+            </div>
+          </Form>
+        </div>
       </div>
-      </div>
-
-
+    </div>
   );
 };
-
 
 export default Login;

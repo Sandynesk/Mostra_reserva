@@ -1,159 +1,110 @@
-*{
-  margin: 0;
+/* Login.css */
+
+
+
+.Enviar{
+
+  position: relative;
+  top: 120px;
+  border-radius: 120px;
+
 }
-.fotoinha{
+
+.Forms{
+  position: relative;
+  top: 70px;
+  color: transparent;
+}
+
+/* CSS para tornar os inputs transparentes */
+.Forms .form-control {
+  background-color: transparent; /* Torna o fundo dos inputs transparente */
+  color: #000; /* Define a cor do texto dentro dos inputs, pode ajustar para sua preferência */
+  border: 1px solid rgba(240, 196, 0, 0.8); 
+
+
+}
+
+/* CSS para alterar a cor do placeholder para branco */
+.Forms .form-control::placeholder {
+  color: #fff; /* Cor branca para o texto do placeholder */
+  opacity: 1; /* Ajusta a opacidade do placeholder; 1 é totalmente opaco */
+}
+
+
+
+
+
+
+
+.login-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Usa toda a altura da viewport */
+  overflow: hidden; /* Impede o scroll se a imagem for maior que a viewport */
+
+  
+}
+
+.login-background {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 200px;
-
-
-}
-
-
-
-
-/* Estilo para o título do formulário */
-.login-form h2{
-  margin-bottom: 20px;
-  color: rgb(0, 0, 0);
-}
-/* cor do nomezinho que aparece dentro da caixa `seu nome` e `seu email` */
-.input-box input::placeholder {
-  color: rgb(0, 0, 0);
-}
-
-
- */ /*<<<<< SE TIRAR ESSE MENINO DA MERDA */
-
- 
-/* nao sei pra quer serve exatamente mas to com medo de tirar */
-
-.login-form .remember-forgot{
-  display: flex;
-  justify-content: space-between;
-  font-size: 14.5px;
-  margin: -10px 2 15px;
-}
-
-
-
-/* texto esqueceu senha */
-.remember-forgot a{
-  color: rgb(10, 43, 235);
-  margin-right: 10px;
-  font-weight: 600;
-  text-decoration: none;
-  width: 9px;
-  margin-right: 1px;
+  height: 100%;
+  background-image: url('../../Fotos/Fundo2.jpg'); /* Caminho correto para a imagem */
+  background-size: cover; /* Ajusta o tamanho da imagem para cobrir o elemento */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita a repetição da imagem */
+  z-index: -1; /* Coloca o fundo atrás do formulário */
   
 
-
-
-}
-/* botao de entrar*/
-.login-form button{
-  width: 50%;
-  height: 45%;
-  border: none;
-  outline: none;
-  border-radius: 40px;
-  box-shadow: 0 0 10px rgb(0 , 0, 0, .1);
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 400px;
-  background: #604cde !important;
-  color: rgb(255, 255, 255)!important;
-  padding: 15px 35px 18px 35px;
 }
 
-/* hoover do botao de entrar*/
-.login-form button:hover{
-  background-color: rgb(142, 54, 214)!important;
-  color: #e0e0e0 !important;
-
-}
-
-/* link do cadastre-se e o espacamento com o botao de entrar */
-.login-form .register-link{
-  font-size: 14.5px;
-  text-align: center;
-  margin-top: 20px;
-  
-}
-
-/* texto do cadastre-se */
-.register-link p a {
-  color:rgb(10, 43, 235);
-  text-decoration: none;
-  font-weight: 600;
-}
-
-/* quadradinho do login */
-.login-form {
-  width: 100%;
-  background: rgb(0, 0, 0);
+.login-form-container {
   position: relative;
-  bottom: 800px;
-  padding: 30px 40px; /* Ajuste o espaçamento conforme necessário */
-  border-radius: 10px; /* Arredonde as bordas se desejar */
-
-
-}
-
-
-/* fundo do login form*/
-.login-form{
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: white!important;
-  border-radius: 5px;
-  background: transparent;
-  color: rgb(0, 0, 0);
-  border: 2px solid rgb(255, 255, 255, .2);
-  backdrop-filter: blur(30px);
-  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-} 
- 
-
-/* Estilo para os campos de formulário e botões */
-.login-form input[type="email"],
-.login-form input[type="password"] {
-  margin-bottom: 15px;
-  border-color: black;
-  border-width: 1px;
-  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   
- 
-}
-
-/* estilo para o botao */
-.custom-button {
-  margin-top: 15px;
-  color: #e0e0e0;
- 
+  
 }
 
 
+.login-form-container Form {
+  background: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve para destacar o formulário */
+  max-width: 400px;
+  max-height: 450px;
+  height: 100%;
+  width: 100%;
 
-/* Estilos para as caixas de texto */
-.input-box input{
-width: 100%;
-height: 100%;
-background: transparent;
-border: none;
-outline: none;
-border: 2px solid rgb(255, 255, 255, .2);
-border-radius: 40px;
-font-size: 16px;
-padding: 20px 45px 20px 20px;
-color: rgb(0, 0, 0) !important;
-border: 2px solid black;
+  background-color: transparent; /* Remove a cor de fundo, se necessário */
+  backdrop-filter: blur(50px);
+  color: rgb(255, 246, 162);
+  border: 1px solid rgba(240, 196, 0, 0.8); 
 }
 
-/* estilo para os boxes de redefinir senha */
-.input-box-red{
-  text-align: start;
+
+.login-title {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  top: 47px;
+  font-size: 40px; /* Aumenta o tamanho do texto para 40 pixels */
+  font-weight: bold;
+
+
 }
+
+.login-subtitle{
+
+  position: relative;
+  top: 30px;
+}
+
+
+
