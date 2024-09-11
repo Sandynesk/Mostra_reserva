@@ -23,7 +23,7 @@ function Navbar() {
               <a className="nav-link" href="saiba">Saiba mais!</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Serviços</a>
+              <a className="nav-link" href="forum">Fórum</a>
             </li>
           </ul>
           <a className="btn btn-custom" href="/login" role="button" style={{ fontWeight: 'bold' }}>Login</a>
