@@ -27,6 +27,7 @@ function Navbar() {
             </li>
           </ul>
           <a className="btn btn-custom" href="/login" role="button" style={{ fontWeight: 'bold' }}>Login</a>
+          <a className="btn btn-custom" href="/cadastro" role="button" style={{ fontWeight: 'bold' }}>Cadastro</a>
         </div>
       </div>
     </nav>
