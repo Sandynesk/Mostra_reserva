@@ -8,7 +8,7 @@ function Forum() {
     <div>
       <Navbar />
       <Forumcont />
-      <Footer />  {/* Renderize o componente Footer */}
+      <Footer />
     </div>
   );
 }

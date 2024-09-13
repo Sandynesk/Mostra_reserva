@@ -1,0 +1,46 @@
+/* Define a fonte padrão e o estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #6900f1; /* Cor primária */
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+}
+
+article {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    width: 100%;
+    max-width: 800px; /* Largura máxima do post */
+}
+
+article h2 {
+    margin-top: 0;
+    color: #6900f1; /* Cor primária */
+}
+
+article p {
+    line-height: 1.6;
+    color: #666;
+}

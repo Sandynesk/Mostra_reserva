@@ -6,6 +6,7 @@ import Home from './components/Home.js';
 import Saiba from './components/Saiba.js'; // Importe o componente Saiba
 import Senha from './components/Senha.js'; // Importe o componente Senha
 import Forum from './components/Forum';
+import Post from './components/Post';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path='/cadastro' element={<Cadastro/>} />
           <Route path='/password' element={<Senha/>} />
           <Route path='/forum' element={<Forum/>} />
+          <Route path='/post' element={<Post/>} />
           {/* Outras rotas podem ser adicionadas aqui */}
         </Routes>
       </div>
