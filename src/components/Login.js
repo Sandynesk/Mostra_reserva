@@ -29,7 +29,7 @@ const Login = () => {
       </div>
       <div className="form-box">
         <h2>Login</h2>
-        <p>Não tem uma conta? <a href="#">Criar conta</a></p>
+        <p>Não tem uma conta? <a href="/cadastro">Criar conta</a></p>
         <form onSubmit={handleSubmit}>
           <div className="input-group">
             <label htmlFor="username">Usuário</label>
