@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './Css/Login.css'; // Certifique-se de criar um arquivo CSS para isso
+import Mulherlogin from'../Fotos/MuleBonita.jpg';
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -16,26 +18,47 @@ const Login = () => {
       // Redirecionar ou  realizar outra ação após o login bem-sucedido
       window.location.href = '/dashboard'; // Exemplo de redirecionamento
     } catch (error) {
-      throw(error)
       setError('Credenciais inválidas');
     }
   };
 
   return (
-    <div>
-      <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Usuário:</label>
-          <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
-        </div>
-        <div>
-          <label>Senha:</label>
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-        </div>
-        <button type="submit">Entrar</button>
-        {error && <p>{error}</p>}
-      </form>
+    <div className="box">
+      <div className="img-box">
+        <img src={Mulherlogin} alt="Imagem do Formulário" />
+      </div>
+      <div className="form-box">
+        <h2>Login</h2>
+        <p>Não tem uma conta? <a href="#">Criar conta</a></p>
+        <form onSubmit={handleSubmit}>
+          <div className="input-group">
+            <label htmlFor="username">Usuário</label>
+            <input 
+              type="text" 
+              id="username" 
+              value={username} 
+              onChange={(e) => setUsername(e.target.value)} 
+              placeholder="Digite seu usuário" 
+              required 
+            />
+          </div>
+          <div className="input-group">
+            <label htmlFor="password">Senha</label>
+            <input 
+              type="password" 
+              id="password" 
+              value={password} 
+              onChange={(e) => setPassword(e.target.value)} 
+              placeholder="Digite sua senha" 
+              required 
+            />
+          </div>
+          <div className="input-group">
+            <button type="submit">Entrar</button>
+          </div>
+          {error && <p className="error">{error}</p>}
+        </form>
+      </div>
     </div>
   );
 };
