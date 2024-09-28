@@ -19,6 +19,10 @@ app.get('/login', (req, res) => {
   res.send('O login está funcionando!');
 });
 
+app.get('/cadastro', (req, res) => {
+  res.send('O Cadastro está funcionando!');
+});
+
 app.post('/login', async (req, res) => {
   const { username, password } = req.body;
   try {
@@ -41,20 +45,35 @@ app.post('/login', async (req, res) => {
   }
 });
 
-app.post('/register', async (req, res) => {
-  const { username, password } = req.body;
+app.post('/cadastro', async (req, res) => {
+  const { username, email, gender, password } = req.body;
+
   try {
-    const hashedPassword = await bcrypt.hash(password, 10);
-    createUser(username, hashedPassword, (err) => {
+    // Verifica se o usuário já existe
+    findUser(username, async (err, user) => {
       if (err) {
-        return res.status(500).send('Erro ao criar usuário');
+        return res.status(500).send('Erro no servidor');
       }
-      res.status(201).send('Usuário criado');
+      if (user) {
+        return res.status(400).send('Usuário já existe');
+      }
+
+      // Cria o hash da senha
+      const hashedPassword = await bcrypt.hash(password, 10);
+
+      // Cria o usuário
+      createUser(username, email, gender, hashedPassword, (err) => {
+        if (err) {
+          return res.status(500).send('Erro ao criar usuário');
+        }
+        res.status(201).send('Usuário criado com sucesso');
+      });
     });
   } catch (err) {
-    res.status(500).send('Erro ao criar usuário');
+    res.status(500).send('Erro no servidor');
   }
 });
+
 
 // Middleware de verificação de token
 const verifyToken = (req, res, next) => {
