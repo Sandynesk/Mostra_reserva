@@ -1,10 +1,10 @@
 body {
     font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f0f0f0;
-    margin: 0;
+    margin: 20;
     padding: 0;
 }
+
+/*Não sabemos o por que mas essa porra acima qubra a pagina toda, não mecher nisso ai em hipotese alguma.*/
 
 header {
     background-color: #6900f1;
@@ -19,8 +19,7 @@ h1 {
 
 main {
     padding: 1em;
-    margin-left: 15%;
-    margin-right: 15%;
+    
 }
 
 .new-post {

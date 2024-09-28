@@ -9,10 +9,29 @@
             "server": "localhost",
             "port": 3306,
             "driver": "MySQL",
+<<<<<<< HEAD
             "name": "Mostra steam",
             "database": "Sandybank",
             "username": "root",
             "askForPassword": true
+=======
+            "name": "Sandy",
+            "database": "aa",
+            "username": "root"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "database": "Sandybank",
+            "name": "Mostra",
+            "username": "root"
+>>>>>>> 670002240d77a9d3c25797f5cdada634d1742eb2
         }
     ]
 }

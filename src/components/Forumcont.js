@@ -1,13 +1,9 @@
 import React from "react";
-import './Css/Forumcont.css';
+import './Css/Forumcont.css'
 
 function Forumcont(){
     return (
-            
-        <body>
-        <header>
-            <h1>Fórum ConsuWeb</h1>
-        </header>
+        
         <main>
             <section class="new-post">
                 <h2>Crie um novo post</h2>
@@ -27,7 +23,6 @@ function Forumcont(){
                 </article>
             </section>
         </main>
-    </body>
     
     )
 

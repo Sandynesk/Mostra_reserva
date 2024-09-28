@@ -1,0 +1,108 @@
+/* src/Css/Cadastro.css */
+.box {
+    display: flex;
+    width: 930px;
+  }
+  
+  .img-box img {
+    width: auto;
+    height: 700px;
+    position: relative;
+    left: 0;
+    border-radius: 20px 0 0 20px;
+  }
+  
+  .form-box {
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(40px);
+    padding: 30px 40px;
+    width: 50%;
+    border-radius: 0 20px 20px 0;
+  }
+  
+  .form-box h2 {
+    font-size: 30px;
+  }
+  
+  .form-box p {
+    font-weight: bold;
+    color: #3D3D3D;
+  }
+  
+  .form-box p a {
+    color: #6900f1;
+    text-decoration: none;
+  }
+  
+  .input-group {
+    margin-bottom: 25px;
+  }
+  
+  .input-group label {
+    color: #3D3D3D;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input, .input-group select {
+    width: 100%;
+    height: 47px;
+    background-color: rgba(255, 255, 255, 0.32);
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 15px;
+    color: #616161;
+    transition: all 0.4s ease;
+  }
+  
+  .input-group input:focus, .input-group select:focus {
+    border-color: #6900f1;
+  }
+  
+  .input-group button {
+    width: 100%;
+    height: 47px;
+    background: #6900f1;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .input-group select {
+    width: 100%;
+    height: auto; /* Mude para auto para evitar cortes */
+    background-color: rgba(255, 255, 255, 0.32);
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px; /* Mantenha o padding para que o texto não fique colado nas bordas */
+    font-size: 15px;
+    color: #616161;
+    transition: all 0.4s ease;
+  }
+  
+  .input-group select:focus {
+    border-color: #6900f1;
+  }
+  
+  
+  @media (max-width: 930px) {
+    .img-box {
+      display: none;
+    }
+    .box {
+      width: 700px;
+    }
+    .form-box {
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+  
