@@ -9,6 +9,8 @@ CREATE TABLE users (
   id INT AUTO_INCREMENT PRIMARY KEY,
   username VARCHAR(255) NOT NULL UNIQUE,
   password VARCHAR(255) NOT NULL
+  ALTER TABLE users ADD COLUMN email VARCHAR(255) NOT NULL;
+  ALTER TABLE users ADD COLUMN gender VARCHAR(50) NOT NULL;
 );
 
 -- Inserção de um registro
