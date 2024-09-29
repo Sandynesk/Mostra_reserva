@@ -1,3 +1,22 @@
+body, html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  width: 100%;
+}
+
+#root, .App {
+  width: 100%;
+}
+
+.container-fluid {
+  width: 100%; /* Certifica que a largura se adapta à tela */
+}
+
+
 .App {
   text-align: center;
 }
@@ -36,4 +55,5 @@
     transform: rotate(360deg);
   }
 }
+
 
