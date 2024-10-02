@@ -1,16 +1,14 @@
-/*Isso aqui impede problemas*/
-html, body {
-  width: 100%;
-  overflow-x: hidden;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    padding: 0;
-}
-/*SOCORRO ACABOU*/
-
-/*TUDO ISSO AQUI SÃO COISAS RELACIONADAS À NAVBAR, MANTER ORGANIZADO*/
+    /*Isso aqui impede problemas*/
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        padding: 0;
+    }
+    /*SOCORRO ACABOU*/
 
 
 .Logo {

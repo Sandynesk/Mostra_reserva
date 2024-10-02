@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // Importe o CSS do Bootstrap
 import imgLogo from '../ForumFotos/Logo.png'
 
 
-function Navbar() {
+function FrNavbar() {
   return (
     
     <nav className="navbar navbar-expand-lg bg-custom">
@@ -35,4 +35,4 @@ function Navbar() {
 
 
 
-export default Navbar;
+export default FrNavbar;
