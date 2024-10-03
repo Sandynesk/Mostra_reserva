@@ -1,46 +1,18 @@
 const mysql = require('mysql2');
 
-// Criação da conexão
 const db = mysql.createConnection({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME
+  host: 'localhost',       // Altere para o seu host
+  user: 'root',            // Usuário do banco de dados
+  password: 'Leitinho12345', // Senha do banco de dados
+  database: 'Sandybank',      // Nome do banco de dados
 });
 
-db.connect(err => {
+db.connect((err) => {
   if (err) {
-    console.error('Erro ao conectar ao banco de dados:', err);
-  } else {
-    console.log('Conectado ao MySQL');
+    console.error('Erro ao conectar no banco de dados:', err);
+    return;
   }
+  console.log('Conectado ao banco de dados MySQL.');
 });
 
-// Função para encontrar usuário
-const findUser = (username, callback) => {
-  db.query('SELECT * FROM users WHERE username = ?', [username], (err, results) => {
-    if (err) {
-      console.error('Erro ao consultar usuário:', err);
-      callback(err, null);
-    } else {
-      callback(null, results[0]); // Retorna o primeiro resultado encontrado
-    }
-  });
-};
-
-
-// Função para criar usuário
-const createUser = (username, email, gender, hashedPassword, callback) => {
-  const query = 'INSERT INTO users (username, email, gender, password) VALUES (?, ?, ?, ?)';
-  db.query(query, [username, email, gender, hashedPassword], (err) => {
-    if (err) {
-      console.error('Erro ao criar usuário:', err);
-      callback(err);
-    } else {
-      callback(null);
-    }
-  });
-};
-
-
-module.exports = { findUser, createUser };
+module.exports = db;

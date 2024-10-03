@@ -22,7 +22,7 @@
     "express": "^4.21.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.6.2",
-    "mysql2": "^3.11.2",
+    "mysql2": "^3.11.3",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.3.1",
@@ -62,6 +62,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^3.1.4"
+    "jest": "^27.5.1",
+    "nodemon": "^3.1.4",
+    "supertest": "^7.0.0"
   }
 }
