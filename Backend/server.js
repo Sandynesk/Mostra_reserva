@@ -6,7 +6,6 @@ const authRoutes = require('./routes/authRoutes');
 const userRoutes = require('./routes/userRoutes');
 const { verifyToken } = require('./middleware/auth'); // Importa o middleware
 
-
 const app = express();
 app.use(express.json());
 app.use(cors());
@@ -20,7 +19,13 @@ app.get('/protected', verifyToken, (req, res) => {
   res.send('Acesso permitido');
 });
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`Servidor rodando na porta ${PORT}`);
-});
+// Exporta o app
+module.exports = app;
+
+// Inicia o servidor se este arquivo for executado diretamente
+if (require.main === module) {
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT, () => {
+    console.log(`Servidor rodando na porta ${PORT}`);
+  });
+}

@@ -15,6 +15,8 @@ const findUser = (username, callback) => {
   });
 };
 
+
+
 // Função para criar usuário
 const createUser = (username, email, gender, hashedPassword, callback) => {
   console.log('Criando usuário:', { username, email, gender, hashedPassword }); // Log dos dados do usuário

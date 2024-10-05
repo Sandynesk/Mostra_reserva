@@ -1,5 +1,5 @@
 // /src/modules/db.js
-const mysql = require('mysql2');
+const mysql = require('mysql2/promise'); // Corrige a importação para usar Promises, isso é importante para o codigo nao quebrar aparentemente.
 
 // Criação da conexão
 const db = mysql.createConnection({
