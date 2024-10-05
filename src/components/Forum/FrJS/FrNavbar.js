@@ -2,34 +2,26 @@
 import React from 'react';
 import '../FrCss/FrNavbar.css'; // Importe o arquivo de estilos CSS
 import 'bootstrap/dist/css/bootstrap.min.css'; // Importe o CSS do Bootstrap
-import imgLogo from '../ForumFotos/Logo.png'
-
+import imgLogo from '../ForumFotos/Fonte3.png'
+import pfpPlaceholder from '../ForumFotos/User.png'
 
 function FrNavbar() {
   return (
     
-    <nav className="navbar navbar-expand-lg bg-custom">
-      <div className="container-fluid">
-        <img src={imgLogo} className="Logo" alt="Logo" /> 
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-          <ul className="navbar-nav mb-2 mb-lg-0">
-            <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/">Tela incial</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="saiba">Saiba mais!</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="forum">Fórum</a>
-            </li>
-          </ul>
-          <a className="btn btn-custom" href="/login" role="button" style={{ fontWeight: 'bold' }}>Login</a>
+    <nav className='navFr'>
+      <img src={imgLogo} alt='Logo ConsuWeb' id='logoNav'></img>
+      <div className='titulo-container'>
+        <p id='titulo'>Consu<span className="highlight">Web</span></p>
         </div>
+      <div className='pesquisa-container'>
+        <img src='' id='lupa'></img>
+        <input type='text' id="pesquisa" name="pesquisa" placeholder='O que buscas?'></input>
       </div>
+      <button type="button">
+        <img src={pfpPlaceholder} id="placeholderUser"></img>
+      </button>
     </nav>
+
   );
 }
 
