@@ -12,7 +12,7 @@ const Login = () => {
     event.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/login', { username, password });
+      const response = await axios.post('http://localhost:5000/api/auth/login', { username, password });
       localStorage.setItem('token', response.data.token);
       alert('Login bem-sucedido!'); // Notifica o usuário sobre o sucesso
       // Redirecionar ou  realizar outra ação após o login bem-sucedido

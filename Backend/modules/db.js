@@ -1,3 +1,4 @@
+// /src/modules/db.js
 const mysql = require('mysql2');
 
 // Criação da conexão
@@ -8,6 +9,7 @@ const db = mysql.createConnection({
   database: process.env.DB_NAME
 });
 
+// Conecta ao banco de dados
 db.connect(err => {
   if (err) {
     console.error('Erro ao conectar ao banco de dados:', err);
@@ -16,31 +18,5 @@ db.connect(err => {
   }
 });
 
-// Função para encontrar usuário
-const findUser = (username, callback) => {
-  db.query('SELECT * FROM users WHERE username = ?', [username], (err, results) => {
-    if (err) {
-      console.error('Erro ao consultar usuário:', err);
-      callback(err, null);
-    } else {
-      callback(null, results[0]); // Retorna o primeiro resultado encontrado
-    }
-  });
-};
-
-
-// Função para criar usuário
-const createUser = (username, email, gender, hashedPassword, callback) => {
-  const query = 'INSERT INTO users (username, email, gender, password) VALUES (?, ?, ?, ?)';
-  db.query(query, [username, email, gender, hashedPassword], (err) => {
-    if (err) {
-      console.error('Erro ao criar usuário:', err);
-      callback(err);
-    } else {
-      callback(null);
-    }
-  });
-};
-
-
-module.exports = { findUser, createUser };
+// Exporta a conexão
+module.exports = db;
