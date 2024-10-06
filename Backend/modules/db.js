@@ -1,22 +1,38 @@
-// /src/modules/db.js
-const mysql = require('mysql2/promise'); // Corrige a importação para usar Promises, isso é importante para o codigo nao quebrar aparentemente.
+const mysql = require('mysql2/promise');
 
-// Criação da conexão
-const db = mysql.createConnection({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME
-});
+let connection;
 
-// Conecta ao banco de dados
-db.connect(err => {
-  if (err) {
-    console.error('Erro ao conectar ao banco de dados:', err);
-  } else {
-    console.log('Conectado ao MySQL');
+// Função para conectar ao banco de dados
+async function connect() {
+  if (!connection) {
+    try {
+      connection = await mysql.createConnection({
+        host: process.env.DB_HOST,
+        user: process.env.DB_USER,
+        password: process.env.DB_PASSWORD,
+        database: process.env.DB_NAME,
+      });
+      console.log('Conectado ao MySQL');
+    } catch (error) {
+      console.error('Erro ao conectar ao MySQL:', error.message);
+      throw new Error('Erro ao conectar ao banco de dados'); // Lança um erro para ser tratado onde for chamado
+    }
   }
-});
+  return connection;
+}
 
-// Exporta a conexão
-module.exports = db;
+// Função para executar consultas
+async function query(sql, params) {
+  const conn = await connect();
+  try {
+    return await conn.query(sql, params);
+  } catch (error) {
+    console.error('Erro ao executar consulta:', error.message);
+    throw new Error('Erro ao executar a consulta'); // Lança um erro para ser tratado onde for chamado
+  }
+}
+
+// Exporta a função de consulta
+module.exports = {
+  query,
+};

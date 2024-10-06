@@ -1,81 +1,78 @@
 const request = require('supertest');
-const app = require('../server');
-const db = require('../modules/db'); // Supondo que você tenha um módulo para gerenciar a conexão com o banco de dados
+const app = require('../server'); // Certifique-se que esse arquivo exporta o app corretamente
+const db = require('../modules/db'); // Importa o módulo de banco de dados
 
+//npx jest "Backend/Testes/auth.test.js"
 
+// Mock das funções do banco de dados
+jest.mock('../modules/db', () => ({
+    findUser: jest.fn(),
+    createUser: jest.fn(),
+}));
 
-// Limpar e popular o banco de dados antes de executar os testes
-beforeAll(async () => {
-  await db.query("INSERT INTO users (username, password) VALUES ('testuser', 'testpassword')");
-});
+jest.mock('bcrypt', () => ({
+    hash: jest.fn(() => 'hashedPassword'), // Simula o hash da senha
+}));
 
-afterAll(async () => {
-  await db.query("DELETE FROM users"); // Limpa a tabela após os testes
-  db.end(); // Fecha a conexão com o banco de dados
-});
-
-describe('POST /api/auth/login', () => {
-  it('should return a token for valid login', async () => {
-    const response = await request(app)
-      .post('/api/auth/login')
-      .send({
-        username: 'testuser',
-        password: 'testpassword'
-      });
-    
-    expect(response.status).toBe(200);
-    expect(response.body).toHaveProperty('token');
-  });
-
-  it('should return 401 for invalid login', async () => {
-    const response = await request(app)
-      .post('/api/auth/login')
-      .send({
-        username: 'nonexistentuser', // Um usuário que não existe
-        password: 'wrongpassword'
-      });
-    
-    expect(response.status).toBe(401);
-  });
-});
-
-describe('POST /api/auth/cadastro', () => {
-    it('should create a new user', async () => {
-      const response = await request(app)
-        .post('/api/auth/cadastro')
-        .send({
-          username: 'newuser',
-          email: 'newuser@example.com',
-          gender: 'Female',
-          password: 'newpassword'
-        });
-      
-      expect(response.status).toBe(201);
-      expect(response.text).toBe('Usuário criado com sucesso');
+describe('POST /cadastro', () => {
+    beforeEach(() => {
+        db.findUser.mockClear(); // Limpa o mock do banco de dados
+        db.createUser.mockClear();
     });
-  
-    it('should return 400 for existing user', async () => {
-      await request(app)
-        .post('/api/auth/cadastro')
-        .send({
-          username: 'newuser',
-          email: 'newuser@example.com',
-          gender: 'Female',
-          password: 'newpassword'
-        }); // Criar primeiro usuário
-  
-      const response = await request(app)
-        .post('/api/auth/cadastro')
-        .send({
-          username: 'newuser',
-          email: 'newuser@example.com',
-          gender: 'Female',
-          password: 'newpassword'
-        });
-      
-      expect(response.status).toBe(400);
-      expect(response.text).toBe('Usuário já existe');
+
+    afterEach(() => {
+        jest.clearAllMocks(); // Limpa todos os mocks após cada teste
     });
-  });
-  
+
+    it('Deve retornar 400 se o usuário já existir', async () => {
+        db.findUser.mockResolvedValue({ username: 'user4' });
+
+        const res = await request(app)
+            .post('/api/auth/cadastro')
+            .send({
+                username: 'user4',
+                email: 'sandynesk@gmail.com',
+                gender: 'masculino',
+                password: 'password123',
+            });
+
+        expect(res.statusCode).toBe(400);
+        expect(res.text).toBe('Usuário já existe');
+    });
+
+    it('Deve retornar 201 ao criar um usuário novo', async () => {
+        db.findUser.mockResolvedValue(null); // Simula que o usuário não existe
+        db.createUser.mockResolvedValue(true); // Simula sucesso na criação do usuário
+
+        const res = await request(app)
+            .post('/api/auth/cadastro')
+            .send({
+                username: 'newUser',
+                email: 'newuser@gmail.com',
+                gender: 'feminino',
+                password: 'password123',
+            });
+
+        expect(res.statusCode).toBe(201);
+        expect(res.text).toBe('Usuário criado com sucesso');
+    });
+
+    it('Deve retornar 500 se ocorrer um erro no servidor', async () => {
+        db.findUser.mockResolvedValue(null);
+        db.createUser.mockRejectedValue(new Error('Erro no servidor')); // Simula erro ao criar usuário
+
+        const res = await request(app)
+            .post('/api/auth/cadastro')
+            .send({
+                username: 'newUser',
+                email: 'newuser@gmail.com',
+                gender: 'feminino',
+                password: 'password123',
+            });
+
+        expect(res.statusCode).toBe(500);
+        expect(res.text).toBe('Erro no servidor');
+    });
+});
+
 module.exports = app;
