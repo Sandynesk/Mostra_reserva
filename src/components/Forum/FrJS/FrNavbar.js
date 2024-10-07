@@ -19,6 +19,7 @@ function FrNavbar() {
       </div>
       <button type="button">
         <img src={pfpPlaceholder} id="placeholderUser"></img>
+        <span className='UserText'>Olá usuario! </span>
       </button>
     </nav>
 

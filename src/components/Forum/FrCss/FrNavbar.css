@@ -77,3 +77,15 @@ button img {
 .highlight {
     color: yellow; /* Define a cor amarela */
 }
+
+
+.UserText {
+    font-size: 15px;
+    color: rgb(236, 231, 240);
+    font-weight: lighter;
+    display: inline; /* Faz o elemento se comportar como inline */
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    width: 100%;
+}
