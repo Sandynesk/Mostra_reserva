@@ -1,46 +1,38 @@
-const mysql = require('mysql2');
+const mysql = require('mysql2/promise');
 
-// Criação da conexão
-const db = mysql.createConnection({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME
-});
+let connection;
 
-db.connect(err => {
-  if (err) {
-    console.error('Erro ao conectar ao banco de dados:', err);
-  } else {
-    console.log('Conectado ao MySQL');
+// Função para conectar ao banco de dados
+async function connect() {
+  if (!connection) {
+    try {
+      connection = await mysql.createConnection({
+        host: process.env.DB_HOST,
+        user: process.env.DB_USER,
+        password: process.env.DB_PASSWORD,
+        database: process.env.DB_NAME,
+      });
+      console.log('Conectado ao MySQL');
+    } catch (error) {
+      console.error('Erro ao conectar ao MySQL:', error.message);
+      throw new Error('Erro ao conectar ao banco de dados'); // Lança um erro para ser tratado onde for chamado
+    }
   }
-});
+  return connection;
+}
 
-// Função para encontrar usuário
-const findUser = (username, callback) => {
-  db.query('SELECT * FROM users WHERE username = ?', [username], (err, results) => {
-    if (err) {
-      console.error('Erro ao consultar usuário:', err);
-      callback(err, null);
-    } else {
-      callback(null, results[0]); // Retorna o primeiro resultado encontrado
-    }
-  });
+// Função para executar consultas
+async function query(sql, params) {
+  const conn = await connect();
+  try {
+    return await conn.query(sql, params);
+  } catch (error) {
+    console.error('Erro ao executar consulta:', error.message);
+    throw new Error('Erro ao executar a consulta'); // Lança um erro para ser tratado onde for chamado
+  }
+}
+
+// Exporta a função de consulta
+module.exports = {
+  query,
 };
-
-
-// Função para criar usuário
-const createUser = (username, email, gender, hashedPassword, callback) => {
-  const query = 'INSERT INTO users (username, email, gender, password) VALUES (?, ?, ?, ?)';
-  db.query(query, [username, email, gender, hashedPassword], (err) => {
-    if (err) {
-      console.error('Erro ao criar usuário:', err);
-      callback(err);
-    } else {
-      callback(null);
-    }
-  });
-};
-
-
-module.exports = { findUser, createUser };

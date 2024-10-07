@@ -1,8 +1,6 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+
+
+/*Não sabemos o por que mas essa porra acima qubra a pagina toda, não mecher nisso ai em hipotese alguma.*/
 
 header {
     background-color: #6900f1;
@@ -17,8 +15,12 @@ h1 {
 
 main {
     padding: 1em;
-    margin-left: 15%;
-    margin-right: 15%;
+    width: 100%; /* ou tente ajustar para 90%, 80% conforme necessário */
+    max-width: 1200px; /* Definir um valor máximo para limitar a largura */
+    margin: 0 auto; /* Centralizar a página */
+    
+    
+    
 }
 
 .new-post {

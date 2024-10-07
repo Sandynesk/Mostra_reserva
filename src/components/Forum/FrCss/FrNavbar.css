@@ -1,0 +1,91 @@
+.navFr {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens */
+    justify-content: space-between; /* Espaça os itens igualmente */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #6e53ce; /* Cor de fundo da navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    height: 60px;
+}
+
+.navFr #logoNav {
+    height: 50px; /* Ajusta a altura da logo */
+}
+
+.titulo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.titulo-container p {
+    margin: 0;
+    font-size: 24px;
+    color: rgb(236, 231, 240);
+    font-weight: lighter;
+}
+
+.pesquisa-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.pesquisa-container input {
+    width: 650px; /* Largura da caixa de pesquisa */
+    padding: 7px; /* Espaçamento interno da caixa */
+    border: 1px solid aliceblue; /* Borda da caixa */
+    border-radius: 25px; /* Bordas arredondadas */
+    background-color: aliceblue;
+}
+
+button {
+    background: transparent; /* Fundo transparente para o botão */
+    border: none; /* Remove a borda do botão */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    position: relative; /* Necessário para o posicionamento do círculo */
+    padding-bottom: 0.7%;
+}
+
+button:before {
+    content: ""; /* Cria um elemento antes do botão */
+    position: absolute; /* Posiciona o círculo */
+    top: 43%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    width: 45px; /* Ajuste o tamanho do círculo */
+    height: 45px; /* Ajuste o tamanho do círculo */
+    background-color: rgba(188, 122, 241, 0.267); /* Cor do círculo, ajuste conforme necessário */
+    border-radius: 50%; /* Faz o elemento ser um círculo */
+    transform: translate(-50%, -50%); /* Centraliza o círculo em relação ao botão */
+    z-index: 0; /* Coloca o círculo atrás do conteúdo do botão */
+}
+
+button:hover {
+    background: transparent; /* Mantém o fundo transparente */
+    border: none; /* Mantém sem borda */
+    cursor: pointer; /* Mantém o cursor como pointer */
+    position: relative;
+}
+
+button img {
+    position: relative; /* Para que a imagem fique sobre o círculo */
+    z-index: 1; /* Coloca a imagem acima do círculo */
+    height: 45px; /* Ajusta a altura da imagem do botão */
+    filter: invert();
+}
+
+.highlight {
+    color: yellow; /* Define a cor amarela */
+}
+
+
+.UserText {
+    font-size: 15px;
+    color: rgb(236, 231, 240);
+    font-weight: lighter;
+    display: inline; /* Faz o elemento se comportar como inline */
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    width: 100%;
+}

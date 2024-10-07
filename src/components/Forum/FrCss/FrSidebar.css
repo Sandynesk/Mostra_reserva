@@ -1,0 +1,162 @@
+/* src/FrCss/FrSidebar.css */
+
+.fr-sidebar {
+    width: 350px; /* Largura da sidebar */
+    background-color: #715cbe;
+    color: var(--text-clr); /* Cor do texto */
+    height: 100vh; /* Altura da sidebar igual à altura da tela */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Sombra à direita */
+    display: flex;
+    flex-direction: column; /* Alinhamento vertical dos elementos */
+    position: sticky;
+    top: 0;
+}
+
+.fr-sidebar-nav{
+    color: white;
+}
+
+.fr-sidebar-header {
+    margin-bottom: 40px; /* Espaçamento inferior */
+    color: white;
+    font-weight: 100;
+}
+
+
+.fr-sidebar-nav {
+    flex-grow: 1; /* Permite que a navegação ocupe o espaço restante */
+}
+
+.fr-sidebar-nav ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+}
+
+.fr-sidebar-nav li {
+    margin: 15px 0; /* Espaçamento entre os itens */
+}
+
+.fr-sidebar-nav a {
+    color: var(--text-clr); /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    padding: 10px; /* Espaçamento interno nos links */
+    display: flex; /* Flexbox para alinhar ícones e texto */
+    align-items: center; /* Centraliza verticalmente */
+    border-radius: 0.5em; /* Bordas arredondadas */
+    transition: background 0.3s; /* Efeito de transição suave */
+    position: relative;
+    left: 40px;
+    font-size: 17px;
+    font-weight:100;
+}
+
+
+
+.fr-sidebar-nav a:hover {
+    background-color: var(--hover-clr); /* Cor de fundo ao passar o mouse */
+}
+
+.fr-sidebar-nav .active a {
+    color: var(--accent-clr); /* Cor do link ativo */
+}
+
+.fr-sidebar-nav .sub-menu {
+    display: none; /* Oculta submenu por padrão */
+    padding-left: 1.5em; /* Espaçamento para submenu */
+}
+
+.fr-sidebar-nav li.active .sub-menu {
+    display: block; /* Mostra submenu quando ativo */
+}
+
+#toggle-btn {
+    margin-top: auto; /* Coloca o botão na parte inferior */
+    padding: 10px;
+    background-color: var(--accent-clr);
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#toggle-btn:hover {
+    background-color: darken(var(--accent-clr), 10%); /* Escurece a cor ao passar o mouse */
+}
+
+.home-icon,
+.lupa-icon,
+.ajuda-icon,
+.contato-icon {
+    width: 20px; /* Ajuste conforme necessário */
+    height: 20px; /* Ajuste para manter a proporção */
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    filter: invert(1); /* Inverte as cores da imagem */
+    vertical-align: middle; /* Para alinhar verticalmente */
+    
+}
+
+.faq-icon,
+.guia-icon,
+.config-icon {
+    width: 20px; /* Ajuste conforme necessário */
+    height: 20px; /* Ajuste para manter a proporção */
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    filter: invert(1); /* Inverte as cores da imagem */
+    vertical-align: middle; /* Para alinhar verticalmente */
+}
+
+
+.fr-sidebar-toggle{
+    position: relative;
+    top: 40px;
+
+}
+
+.line {
+    height: 0.5px; /* Altura da linha */
+    background-color: rgb(206, 206, 206); /* Cor da linha */
+    margin: 10px 0; /* Espaçamento acima e abaixo da linha */
+}
+
+.highlight {
+    color:  rgb(255, 217, 0);
+}
+
+
+.Subtitle {
+    position: relative;
+    right: 70px;
+    margin-top: 50px; /* Ajuste conforme necessário */
+    margin-bottom: 40px;
+    color: rgb(255, 217, 0);
+}
+
+
+.subtitle {
+    font-size: 20px; /* Ajuste para o tamanho desejado */
+    margin: 0; /* Remove margens padrão do h1 */
+    padding: 0; /* Remove padding padrão do h1 */
+    line-height: 1; /* Ajusta a altura da linha se necessário */
+}
+
+
+
+@media(max-width: 800px) {
+    .fr-sidebar {
+        width: 100%; /* Largura total em telas pequenas */
+        height: auto; /* Altura automática */
+        position: fixed; /* Fixa a sidebar na parte superior */
+        z-index: 1000; /* Coloca acima de outros elementos */
+    }
+
+    .fr-sidebar-nav ul {
+        display: flex; /* Usar flexbox em telas pequenas */
+        overflow-x: auto; /* Permitir rolagem horizontal */
+    }
+
+    .fr-sidebar-nav li {
+        flex: 0 0 auto; /* Impede que os itens encolham */
+    }
+}

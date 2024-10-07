@@ -71,6 +71,9 @@ body {
   .box {
     display: flex;
     width: 930px;
+    position: relative;
+    left: 25%;
+    top: 25px;
   }
   
   

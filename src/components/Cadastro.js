@@ -21,7 +21,7 @@ const Cadastro = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/cadastro', { username, email, gender, password });
+      const response = await axios.post('http://localhost:5000/api/auth/cadastro', { username, email, gender, password });
       alert('Cadastro bem-sucedido!'); // Notifica o usuário sobre o sucesso
       // Redirecionar ou realizar outra ação após o cadastro bem-sucedido
       window.location.href = '/login'; // Exemplo de redirecionamento
