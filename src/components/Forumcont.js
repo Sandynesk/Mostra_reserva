@@ -1,5 +1,5 @@
 import React from "react";
-import './Css/Forumcont.css';
+import './Css/Forumcont.css'
 
 function Forumcont(){
     return (

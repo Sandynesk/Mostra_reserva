@@ -30,8 +30,9 @@ const findUser = (username, callback) => {
 
 
 // Função para criar usuário
-const createUser = (username, hashedPassword, callback) => {
-  db.query('INSERT INTO users (username, password) VALUES (?, ?)', [username, hashedPassword], (err) => {
+const createUser = (username, email, gender, hashedPassword, callback) => {
+  const query = 'INSERT INTO users (username, email, gender, password) VALUES (?, ?, ?, ?)';
+  db.query(query, [username, email, gender, hashedPassword], (err) => {
     if (err) {
       console.error('Erro ao criar usuário:', err);
       callback(err);
@@ -40,5 +41,6 @@ const createUser = (username, hashedPassword, callback) => {
     }
   });
 };
+
 
 module.exports = { findUser, createUser };
