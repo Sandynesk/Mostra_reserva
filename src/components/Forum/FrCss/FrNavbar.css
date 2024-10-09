@@ -47,19 +47,6 @@ button {
     padding-bottom: 0.7%;
 }
 
-button:before {
-    content: ""; /* Cria um elemento antes do botão */
-    position: absolute; /* Posiciona o círculo */
-    top: 43%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
-    width: 45px; /* Ajuste o tamanho do círculo */
-    height: 45px; /* Ajuste o tamanho do círculo */
-    background-color: rgba(188, 122, 241, 0.267); /* Cor do círculo, ajuste conforme necessário */
-    border-radius: 50%; /* Faz o elemento ser um círculo */
-    transform: translate(-50%, -50%); /* Centraliza o círculo em relação ao botão */
-    z-index: 0; /* Coloca o círculo atrás do conteúdo do botão */
-}
-
 button:hover {
     background: transparent; /* Mantém o fundo transparente */
     border: none; /* Mantém sem borda */
