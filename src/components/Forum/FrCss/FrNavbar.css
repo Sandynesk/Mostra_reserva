@@ -39,39 +39,27 @@
     background-color: aliceblue;
 }
 
-button {
-    background: transparent; /* Fundo transparente para o botão */
+.navFr #botãoNav {
+    background: transparent; /* Mantém o fundo transparente */
     border: none; /* Remove a borda do botão */
     cursor: pointer; /* Muda o cursor ao passar sobre o botão */
     position: relative; /* Necessário para o posicionamento do círculo */
     padding-bottom: 0.7%;
 }
 
-button:before {
-    content: ""; /* Cria um elemento antes do botão */
-    position: absolute; /* Posiciona o círculo */
-    top: 43%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
-    width: 45px; /* Ajuste o tamanho do círculo */
-    height: 45px; /* Ajuste o tamanho do círculo */
-    background-color: rgba(188, 122, 241, 0.267); /* Cor do círculo, ajuste conforme necessário */
-    border-radius: 50%; /* Faz o elemento ser um círculo */
-    transform: translate(-50%, -50%); /* Centraliza o círculo em relação ao botão */
-    z-index: 0; /* Coloca o círculo atrás do conteúdo do botão */
+/* Remove o estilo de hover que está influenciando o botão */
+.navFr #botãoNav:hover {
+    background: transparent; /* Garante que não haja fundo ao passar o mouse */
 }
 
-button:hover {
-    background: transparent; /* Mantém o fundo transparente */
-    border: none; /* Mantém sem borda */
-    cursor: pointer; /* Mantém o cursor como pointer */
-    position: relative;
+/* Se precisar, pode adicionar mais regras para hover */
+.navFr #botãoNav:hover img {
+    filter:invert(0.7); /* Exemplo: mudar a cor da imagem ao passar o mouse */
 }
 
 button img {
-    position: relative; /* Para que a imagem fique sobre o círculo */
-    z-index: 1; /* Coloca a imagem acima do círculo */
     height: 45px; /* Ajusta a altura da imagem do botão */
-    filter: invert();
+    filter: invert(); /* Inverte a cor da imagem */
 }
 
 .highlight {

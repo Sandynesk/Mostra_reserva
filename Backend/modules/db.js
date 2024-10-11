@@ -23,7 +23,7 @@ async function connect() {
 
 // Função para executar consultas
 async function query(sql, params) {
-  const conn = await connect();
+  const conn = await connect(); // Chamando connect aqui para garantir que a conexão é feita
   try {
     return await conn.query(sql, params);
   } catch (error) {
@@ -32,7 +32,8 @@ async function query(sql, params) {
   }
 }
 
-// Exporta a função de consulta
+// Exporta as funções
 module.exports = {
+  connect, // Exportando a função connect
   query,
 };

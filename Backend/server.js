@@ -5,10 +5,20 @@ const cors = require('cors');
 const authRoutes = require('./routes/authRoutes');
 const userRoutes = require('./routes/userRoutes');
 const { verifyToken } = require('./middleware/auth'); // Importa o middleware
+const db = require('./modules/db'); // Importa a conexão com o banco de dados
 
 const app = express();
 app.use(express.json());
 app.use(cors());
+
+// Tente conectar ao banco de dados
+(async () => {
+  try {
+    await db.connect(); // Chama a função de conexão
+  } catch (error) {
+    console.error('Erro ao conectar ao banco de dados:', error.message);
+  }
+})();
 
 // Rotas
 app.use('/api/auth', authRoutes);
