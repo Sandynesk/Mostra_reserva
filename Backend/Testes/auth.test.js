@@ -1,18 +1,32 @@
 const request = require('supertest');
 const app = require('../server'); // Certifique-se que esse arquivo exporta o app corretamente
 const db = require('../modules/db'); // Importa o módulo de banco de dados
+const bcrypt = require('bcrypt'); // Certifique-se de que o bcrypt está importado
+const jwt = require('jsonwebtoken');
+
 
 //npx jest "Backend/Testes/auth.test.js"
 
 // Mock das funções do banco de dados
-jest.mock('../modules/db', () => ({
-    findUser: jest.fn(),
-    createUser: jest.fn(),
-}));
+jest.mock('../modules/db', () => {
+    return {
+        query: jest.fn().mockResolvedValue([[{ id: 1, username: 'testuser' }]]),
+        getConnection: jest.fn().mockResolvedValue({}),
+    };
+});
 
 jest.mock('bcrypt', () => ({
+    compare: jest.fn((inputPassword, storedHash) => {
+        return inputPassword === 'senhaSecreta' && storedHash === 'hashedPassword'; // Simula comparação de senha
+    }),
     hash: jest.fn(() => 'hashedPassword'), // Simula o hash da senha
 }));
+;
+
+jest.mock('jsonwebtoken', () => ({
+    sign: jest.fn(() => 'token'), // Simula o token gerado
+}));
+
 
 describe('POST /cadastro', () => {
     beforeEach(() => {
@@ -74,5 +88,10 @@ describe('POST /cadastro', () => {
         expect(res.text).toBe('Erro no servidor');
     });
 });
+
+
+
+
+
 
 module.exports = app;

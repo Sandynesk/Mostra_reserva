@@ -6,30 +6,29 @@ import Mulherlogin from '../Fotos/MuleBonita.jpg'; // Usar a mesma imagem, se de
 
 const Cadastro = () => {
   const [username, setUsername] = useState('');
-  const [email, setEmail] = useState(''); // Novo estado para o email
-  const [gender, setGender] = useState(''); // Novo estado para o gênero
+  const [email, setEmail] = useState('');
+  const [gender, setGender] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-
-    if (password !== confirmPassword) {
-      setError('As senhas não correspondem.');
-      return;
-    }
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/cadastro', { username, email, gender, password });
+      const response = await axios.post('http://localhost:5000/api/auth/cadastro', { username, password, gender, email });
+      console.log('Response:', response); // Adicione um log para ver a resposta
+      localStorage.setItem('token', response.data.token);
       alert('Cadastro bem-sucedido!'); // Notifica o usuário sobre o sucesso
-      // Redirecionar ou realizar outra ação após o cadastro bem-sucedido
-      window.location.href = '/login'; // Exemplo de redirecionamento
-    } catch (error) {
-      setError('Erro ao cadastrar. Tente novamente.');
-    }
-  };
+      window.location.href = '/login'; // Redireciona para a página principal
 
+    } catch (error) {
+      console.error('Error:', error.response?.data || error.message); // Mostra detalhes do erro
+      setError(error.response?.data || 'Ocorreu um erro ao cadastrar-se. Tente novamente mais tarde.');
+    }
+}
+
+  
   return (
     <div className="box">
       <div className="img-box">
