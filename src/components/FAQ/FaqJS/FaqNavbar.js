@@ -1,9 +1,9 @@
 // Navbar.js
 import React from 'react';
-import '../FrCss/FrNavbar.css'; // Importe o arquivo de estilos CSS
+import '../FaqCss/FaqNavbar.css'
 import 'bootstrap/dist/css/bootstrap.min.css'; // Importe o CSS do Bootstrap
-import imgLogo from '../ForumFotos/Fonte3.png'
-import pfpPlaceholder from '../ForumFotos/User.png'
+import imgLogo from '../FaqFotos/Fonte3.png'
+import pfpPlaceholder from '../FaqFotos/User.png'
 
 function FaqNavbar() {
   return (
@@ -19,7 +19,7 @@ function FaqNavbar() {
       </div>
       <button type="button" id="botãoNav">
         <img src={pfpPlaceholder} id="placeholderUser"></img>
-        <span className='UserText'>Olá usuario! </span>
+        <span className='UserText'>Olá usuario!</span>
       </button>
     </nav>
 

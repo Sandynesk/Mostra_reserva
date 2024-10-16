@@ -1,5 +1,5 @@
 import React from 'react';
-import FaqNavbar from '../FaqJS/FaqNavbar.js';
+import FaqNavbar from './FaqJS/FaqNavbar.js';
 import Footer from '../Footer';
 
 
