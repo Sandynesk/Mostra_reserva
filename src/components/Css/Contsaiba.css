@@ -92,3 +92,39 @@
     position: relative;
     top: 150px;
 }
+@media (max-width: 480px) {
+    .bloco-roxo #Titulo-frente {
+        font-size: 40px;
+    }
+
+    .bloco-roxo #SubTitulo-frente {
+        font-size: 18px;
+    }
+
+    .Saiba-conteiner-info #titulo-saiba {
+        font-size: 40px;
+        right: 20px; /* Ajuste da posição */
+    }
+
+    .Saiba-conteiner-info #sub-saiba {
+        font-size: 16px;
+        width: 90%; /* Ajusta a largura */
+        right: 20px; /* Ajuste da posição */
+    }
+
+    .Mulher {
+        left: 50%;
+        top: 300px; /* Ajusta a posição */
+        height: 800px; /* Ajusta a altura */
+    }
+
+    .Bloquinho-conteiner #Titulo-bloquinho {
+        font-size: 60px;
+        top: 100px; /* Ajusta a posição */
+    }
+
+    .Bloquinho-conteiner #SubTitulo-frente-bloquinho {
+        font-size: 20px;
+        top: 100px; /* Ajusta a posição */
+    }
+}

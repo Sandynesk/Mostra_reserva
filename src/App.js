@@ -5,9 +5,9 @@ import Login from './components/Login.js';
 import Home from './components/Home.js';
 import Saiba from './components/Saiba.js'; // Importe o componente Saiba
 import Senha from './components/Senha.js'; // Importe o componente Senha
-import Forum from './components/Forum';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ForumHome from './components/Forum/ForumHome.js';
+import Perfil from './components/Perfil';
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
           <Route path='/cadastro' element={<Cadastro/>} />
           <Route path='/password' element={<Senha/>} />
           <Route path='/forum' element={<ForumHome/>} />
+          <Route path='/perfil' element={<Perfil/>} />
           {/* Outras rotas podem ser adicionadas aqui */}
         </Routes>
       </div>
