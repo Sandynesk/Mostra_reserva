@@ -20,10 +20,13 @@ function Navbar() {
               <a className="nav-link active" aria-current="page" href="/">Tela incial</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="saiba">Saiba mais!</a>
+              <a className="nav-link" href="saiba">Saiba mais</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="forum">Fórum</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="faq">FAQ</a>
             </li>
           </ul>
           <a className="btn btn-custom" href="/login" role="button" style={{ fontWeight: 'bold' }}>Login</a>
