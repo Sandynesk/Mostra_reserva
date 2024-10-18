@@ -61,7 +61,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/jest-dom": "^6.6.2",
     "@testing-library/react": "^16.0.1",
     "jest": "^27.5.1",
     "nodemon": "^3.1.4",
