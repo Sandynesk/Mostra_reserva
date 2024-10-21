@@ -1,0 +1,119 @@
+.perfil-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #6900f1;
+    padding: 20px;
+    border-bottom: 1px solid #fafafa;
+}
+
+.perfil-foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.perfil-header h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: white;
+}
+
+.perfil-header p {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.perfil-edit-button {
+    background-color: #ffb95f;
+    color: rgb(24, 23, 23);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.perfil-edit-button:hover {
+    background-color: #ad6302;
+    color: #ffffff;
+}
+
+.perfil-body {
+    background-color: #ffb95f;
+    padding: 20px;
+    margin: 2%;
+}
+
+.perfil-body h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.perfil-body p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .perfil-header h1 {
+        font-size: 20px;
+    }
+
+    .perfil-body h2 {
+        font-size: 18px;
+    }
+
+    .perfil-edit-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .perfil-header h1 {
+        font-size: 18px;
+    }
+
+    .perfil-header p {
+        font-size: 14px;
+    }
+
+    .perfil-foto {
+        width: 120px;
+        height: 120px;
+    }
+
+    .perfil-body h2 {
+        font-size: 16px;
+    }
+
+    .perfil-body p {
+        font-size: 14px;
+    }
+
+    .perfil-edit-button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
+.Post-Button {
+    margin: 2%;
+}
+
+.Post-Button_main {
+    color: rgb(255, 255, 255);
+    background-color: #39126b;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
