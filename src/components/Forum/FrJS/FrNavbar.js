@@ -16,10 +16,10 @@ function FrNavbar() {
         <img src='' id='lupa'></img>
         <input type='text' id="pesquisa" name="pesquisa" placeholder='O que buscas?'></input>
       </div>
-      <Link to="/perfil" id="botãoNav">
-        <img src={pfpPlaceholder} id="placeholderUser" alt="User"></img>
-        <span className='UserText'>Olá usuario! </span>
-      </Link>
+      <button type="button" id="botãoNav">
+        <img src={pfpPlaceholder} id="placeholderUser"></img>
+        <span className='UserText'>Olá, <b>usuário</b>! </span>
+      </button>
     </nav>
   );
 }

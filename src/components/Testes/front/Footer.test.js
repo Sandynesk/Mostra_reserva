@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import Footer from '../Footer.js';
+import Footer from '../../Footer.js';
 
 describe('Footer component behavior', () => {
   test('clicking social media links opens them in new tabs', () => {
