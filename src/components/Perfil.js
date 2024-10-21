@@ -1,6 +1,6 @@
 import React from 'react';
 import './Css/Perfil.css';
-import Foto from '../Fotos/Pretty.jpg';
+import Foto from '../Fotos/Pretty.png';
 import Navbar from './Navbar';
 import Footer from './Footer';
 

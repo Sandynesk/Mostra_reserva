@@ -7,7 +7,7 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+.container-faq h1 {
     color: #6e53ce;
     text-align: center;
 }

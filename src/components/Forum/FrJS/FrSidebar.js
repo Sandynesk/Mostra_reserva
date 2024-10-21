@@ -20,7 +20,7 @@ const FrSidebar = () => {
         <div className="line"></div> {/* Linha branca */}
         <div className="fr-sidebar-nav">
     <ul>
-        <li><a href="#">
+        <li><a href="/">
             <img src={HomeIcon} alt="Home" className="home-icon" />
             Página inicial
         </a></li>
