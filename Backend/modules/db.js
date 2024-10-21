@@ -7,10 +7,11 @@ async function connect() {
   if (!connection) {
     try {
       connection = await mysql.createConnection({
-        host: process.env.DB_HOST,
-        user: process.env.DB_USER,
-        password: process.env.DB_PASSWORD,
-        database: process.env.DB_NAME,
+        host: 'junction.proxy.rlwy.net', // Usando o host público
+        user: 'root',                     // Nome de usuário
+        password: 'EQbxLtukiBxmdMQwOKQbvNSzgFSHQdkC', // Senha
+        database: 'railway',              // Nome do banco de dados
+        port: 56554,                      // Porta pública
       });
       console.log('Conectado ao MySQL');
     } catch (error) {
@@ -20,6 +21,15 @@ async function connect() {
   }
   return connection;
 }
+
+(async () => {
+  try {
+    await connect();
+    console.log('Conexão com o banco de dados na nuvem bem-sucedida!');
+  } catch (error) {
+    console.error('Erro na conexão com o banco de dados:', error.message);
+  }
+})();
 
 // Função para executar consultas
 async function query(sql, params) {
