@@ -1,0 +1,73 @@
+.forum-input-container {
+    position: absolute;
+    top: 200px; /* ajuste conforme necessário */
+    left: 50%; /* centraliza horizontalmente */
+    transform: translateX(-50%); /* centraliza */
+    width: 950px; /* largura aumentada */
+    padding: 10px; /* maior padding */
+    border-radius: 10px;
+    background-color: white; /* fundo branco */
+}
+
+#forum-title,
+#forum-content,
+#forum-tags {
+    display: block;
+    width: 100%; /* ocupa toda a largura do container */
+    margin-bottom: 15px; /* espaço entre os elementos */
+    padding: 12px; /* padding maior para conforto */
+    border: none; /* removendo a borda */
+    border-radius: 30px; /* bordas arredondadas */
+    font-size: 14px; /* texto maior */
+    background-color: white; /* fundo branco */
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); /* sombra interna */
+    transition: box-shadow 0.3s; /* transição suave para a sombra */
+}
+
+#forum-title:focus,
+#forum-content:focus,
+#forum-tags:focus {
+    box-shadow: inset 0 2px 5px rgba(113, 92, 190, 0.5); /* sombra interna ao focar */
+}
+
+#forum-title {
+    width: 50%;
+    font-size: 25px; /* mesmo tamanho que o placeholder */
+}
+
+/* Estilo do placeholder */
+#forum-title::placeholder {
+    color: black; /* cor preta */
+    font-weight: bold; /* negrito */
+    font-size: 25px; /* tamanho do placeholder */
+}
+
+#forum-content {
+    height: 80px; /* altura ajustada para textarea */
+    font-size: 15px;
+}
+
+#forum-post-button {
+    background-color: #715cbe; /* cor do botão */
+    color: white;
+    padding: 10px 16px; /* ajuste de padding */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px; /* texto maior */
+    transition: background-color 0.3s; /* transição suave */
+}
+
+#forum-post-button:hover {
+    background-color: rgb(91, 61, 146); /* cor do botão ao passar o mouse */
+}
+
+.tag-button-container {
+    display: flex;
+    align-items: center; /* centraliza verticalmente */
+}
+
+.tag-button-container select {
+    flex: 1; /* ocupa o espaço restante */
+    margin-right: 10px; /* espaçamento à direita */
+}
