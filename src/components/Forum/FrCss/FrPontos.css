@@ -1,4 +1,4 @@
-.card-pontos{
+.card-pontos {
     background: linear-gradient(135deg, #6a0dad, #9b59b6);
     color: white;
     padding: 10px; /* Reduzido para diminuir a altura total */
@@ -10,45 +10,54 @@
     position: absolute;
     top: 200px;
     left: 1500px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Adiciona animação suave */
 }
 
-.pontos-title{
+.card-pontos:hover {
+    transform: translateY(-5px); /* Movimenta o card 5px para cima */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+}
 
+.pontos-title {
     position: relative;
     top: 40px;
     font-weight: bold;
-    
 }
 
-.pontos-subtitle{
+.pontos-subtitle {
     position: relative;
     top: 40px;
-
 }
 
-.pontos{
-
+.pontos {
     position: relative;
     top: 30px;
     font-weight: bolder;
     font-size: 40px;
-
     color: #ffc400;
 }
 
 /* texto */
-
-.text-coluna{
-    border: 1px solid #000; /* Borda de 1px, sólida, na cor preta */
+.text-coluna {
+    border: 1px solid #8400d1; /* Borda de 1px, sólida, na cor preta */
     position: absolute;
-
     top: 500px;
-    left: 1520px;
-
-
+    left: 1500px;
+    padding: 20px; /* Espaçamento interno para dar um respiro entre a borda e o conteúdo */
+    border-radius: 10px; /* Arredonda os cantos do card */
+    background-color: #f9f9f9; /* Cor de fundo para dar destaque */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar efeito de card */
+    max-width: 300px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Animação suave */
 }
 
-.coluna-title{
+.text-coluna:hover {
+    transform: translateY(-5px); /* Movimenta o card 5px para cima */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+}
+
+.coluna-title {
     font-size: 30px;
     font-weight: bolder;
+    margin-bottom: 10px; /* Espaçamento entre o título e o conteúdo */
 }

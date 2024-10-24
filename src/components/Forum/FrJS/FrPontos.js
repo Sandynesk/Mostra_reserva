@@ -20,8 +20,8 @@ const FrPontos = () => {
         <p>Curiosidade do dia</p>
 
         </div>
-        <p>Texto 2</p>
-        <p>Texto 3</p>
+        <p>proteção contra a publicidade enganosa ou abusiva", garantido pelo Código de Defesa do Consumidor (CDC). Isso significa que empresas não podem fazer promessas falsas ou exageradas em seus anúncios, como, por exemplo, dizer que um produto tem um benefício que ele não oferece. Caso isso ocorra, o consumidor tem o direito de exigir a correção da oferta ou até mesmo cancelar a compra sem prejuízos financeiros.</p>
+   
     </div>
     
     </>
