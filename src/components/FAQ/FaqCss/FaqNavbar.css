@@ -1,41 +1,58 @@
 .navFaq {
+    
+  
+}
+
+.navFaq #logoNav {
+    height: 150px; /* Ajusta a altura da logo */
+    width: auto;
+    position: relative;
+    left: 200px;
+    top: -40px;
+    
+}
+
+.Faq-conteiner{
     display: flex;
     align-items: center; /* Alinha verticalmente os itens */
     justify-content: space-between; /* Espaça os itens igualmente */
     padding: 10px; /* Espaçamento interno */
     background-color: #6e53ce; /* Cor de fundo da navbar */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    height: 60px;
+    height: 350px;
 }
 
-.navFaq #logoNav {
-    height: 50px; /* Ajusta a altura da logo */
-}
-
-.titulo-container {
+.titulo-containerr {
     display: flex;
     align-items: center;
     margin-left: 10px;
+    position: relative;
+    top: 30px;
+    left: 65px;
 }
 
-.titulo-container p {
+.titulo-containerr p {
     margin: 0;
     font-size: 24px;
     color: rgb(236, 231, 240);
     font-weight: lighter;
 }
 
-.pesquisa-container {
+.pesquisa-containerr {
     flex: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -100px;
 }
 
-.pesquisa-container input {
-    width: 650px; /* Largura da caixa de pesquisa */
+.pesquisa-containerr input {
+    width: 700px;
+    height: 65px; /* Largura da caixa de pesquisa */
     padding: 7px; /* Espaçamento interno da caixa */
     border: 1px solid aliceblue; /* Borda da caixa */
-    border-radius: 25px; /* Bordas arredondadas */
+    border-radius: 45px; /* Bordas arredondadas */
     background-color: aliceblue;
 }
 
@@ -63,7 +80,7 @@ button img {
 }
 
 .highlight {
-    color: yellow; /* Define a cor amarela */
+    color: rgb(255, 208, 0); /* Define a cor amarela */
 }
 
 

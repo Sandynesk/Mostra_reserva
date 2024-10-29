@@ -1,35 +1,59 @@
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
 
-.container-faq h1 {
-    color: #6e53ce;
-    text-align: center;
-}
+    .container-faq {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
 
-.faq-item {
-    margin: 20px 0;
-    padding: 15px;
-    border-left: 4px solid #6e53ce;
-    background-color: #fffbe0; /* Amarelo claro */
-    border-radius: 4px;
-}
+    .container-faq h1 {
+        color: #141414;
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 30px;
+        margin-top: 50px;
+        font-weight: bolder;
+        
+    }
 
-.question {
-    color: #6e53ce;
-    cursor: pointer;
-}
+    .faq-item {
+        gap: 10px;
+        padding: 20px;
+        background-color: #cfd0dd;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+        width: 50%; /* Altere para 100% para que o card ocupe a largura total */
+        border-radius: 0px; /* Bordas arredondadas mais sutis */
+    }
 
-.answer {
-    color: #333;
-    margin-top: 10px;
-}
+    .faq-item:hover {
+        background-color: #9a97c4;
+    }
 
-.faq-item:hover {
-    background-color: #ffeaa7; /* Amarelo mais intenso ao passar o mouse */
-}
+    .question {
+        color: #222222;
+        font-weight: bolder;
+        font-size: 1.5rem; /* Tamanho reduzido para melhor ajuste */
+        margin: 0; /* Remover margens para melhor alinhamento */
+    }
+
+    .answer {
+        color: #383838;         
+        margin-top: 10px;
+        line-height: 1.5;
+        display: none; /* Oculta as respostas inicialmente */
+    }
+
+    .faq-item.active .answer {
+        display: block; /* Exibe a resposta quando o card estiver ativo */
+        margin-top: 10px; /* Margem acima da resposta para espaçamento */
+    }
