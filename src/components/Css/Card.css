@@ -99,6 +99,16 @@
 }
 
 
+.card-duvida{
+    height: auto;
+    width: 800px;
+    position: relative;
+    top: -740px;
+    left: 700px;
+}
+
+
+
 @media (min-width: 1360px) and (max-width: 1366px){
 
     .card {

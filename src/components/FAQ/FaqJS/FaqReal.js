@@ -2,10 +2,14 @@ import React, { useState } from "react";
 import '../FaqCss/FaqCont.css';
 
 function FaqReal() {
-    const [activeIndex, setActiveIndex] = useState(null);
+    const [activeIndexes, setActiveIndexes] = useState([]);
 
     const toggleAnswer = (index) => {
-        setActiveIndex(activeIndex === index ? null : index);
+        if (activeIndexes.includes(index)) {
+            setActiveIndexes(activeIndexes.filter(i => i !== index));
+        } else {
+            setActiveIndexes([...activeIndexes, index]);
+        }
     };
 
     return (
@@ -14,28 +18,28 @@ function FaqReal() {
             {[
                 {
                     question: "O que é a sua empresa?",
-                    answer: "Nossa empresa é dedicada a oferecer soluções inovadoras que atendem às necessidades do mercado contemporâneo. Temos um compromisso firme com a qualidade em todos os nossos produtos e serviços, sempre priorizando o atendimento excepcional ao cliente. Acreditamos que a inovação é a chave para o sucesso, e trabalhamos constantemente para trazer novidades e melhorias que possam agregar valor à sua experiência."
+                    answer: "Nossa empresa é dedicada a oferecer soluções inovadoras que atendem às necessidades do mercado contemporâneo. Desde a nossa fundação, temos buscado não apenas fornecer produtos de alta qualidade, mas também serviços que agreguem valor aos nossos clientes. Nossa equipe é composta por especialistas apaixonados que estão sempre em busca de melhorias e inovações, garantindo que possamos acompanhar as tendências do setor e superar as expectativas dos nossos clientes."
                 },
                 {
                     question: "Como posso entrar em contato?",
-                    answer: "Para entrar em contato conosco, você pode utilizar o e-mail contato@empresa.com, onde nossa equipe estará pronta para responder às suas dúvidas e fornecer as informações necessárias. Além disso, estamos disponíveis pelo telefone (11) 1234-5678 durante nosso horário de atendimento. Fique à vontade para nos contatar a qualquer momento!"
+                    answer: "Para entrar em contato conosco, você pode utilizar o e-mail contato@empresa.com. Nossa equipe de atendimento ao cliente está disponível para responder às suas dúvidas e fornecer as informações necessárias. Além disso, você pode nos contatar pelo telefone (11) 1234-5678 durante nosso horário de atendimento, que é de segunda a sexta-feira, das 9h às 18h. Também oferecemos um formulário de contato em nosso site, onde você pode deixar sua mensagem, e nos comprometemos a responder o mais rápido possível."
                 },
                 {
                     question: "Quais são os horários de atendimento?",
-                    answer: "Nossos horários de atendimento são de segunda a sexta-feira, das 9h às 18h. Durante esse período, nossa equipe está à disposição para ajudar com quaisquer questões que você possa ter. Se você nos contatar fora desse horário, faremos o possível para responder assim que possível no próximo dia útil."
+                    answer: "Nossos horários de atendimento são de segunda a sexta-feira, das 9h às 18h. Durante esse período, nossa equipe está sempre à disposição para ajudar com quaisquer questões que você possa ter. Se você nos contatar fora desse horário, garantimos que faremos o possível para responder assim que possível no próximo dia útil. Também estamos disponíveis em algumas datas especiais, então fique atento às nossas redes sociais e site para atualizações sobre horários de funcionamento durante feriados."
                 },
                 {
                     question: "Onde posso encontrar mais informações?",
-                    answer: "Para obter mais informações sobre nossos produtos e serviços, você pode visitar nossa seção de serviços em nosso site oficial. Lá, você encontrará detalhes abrangentes sobre o que oferecemos, incluindo especificações de produtos, guias de uso e perguntas frequentes. Se você precisar de informações adicionais, não hesite em entrar em contato conosco diretamente."
+                    answer: "Para obter mais informações sobre nossos produtos e serviços, você pode visitar nossa seção de serviços em nosso site oficial. Lá, você encontrará detalhes abrangentes sobre o que oferecemos, incluindo especificações de produtos, guias de uso e perguntas frequentes. Além disso, temos um blog onde publicamos artigos úteis e atualizações do setor. Se você precisar de informações adicionais, não hesite em entrar em contato conosco diretamente pelo e-mail ou telefone, e nossa equipe ficará feliz em ajudar."
                 },
             ].map((item, index) => (
                 <div 
-                    className={`faq-item ${activeIndex === index ? 'active' : ''}`} 
+                    className={`faq-item ${activeIndexes.includes(index) ? 'active' : ''}`} 
                     key={index} 
                     onClick={() => toggleAnswer(index)}
                 >
                     <h2 className="question">{item.question}</h2>
-                    <p className="answer">{item.answer}</p>
+                    <p className={`answer ${activeIndexes.includes(index) ? 'show' : ''}`}>{item.answer}</p>
                 </div>
             ))}
         </div>

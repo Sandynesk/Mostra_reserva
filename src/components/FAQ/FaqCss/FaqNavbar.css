@@ -44,7 +44,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    left: -100px;
+    left: -130px;
 }
 
 .pesquisa-containerr input {
@@ -56,41 +56,39 @@
     background-color: aliceblue;
 }
 
-.navFaq #botãoNav {
-    background: transparent; /* Mantém o fundo transparente */
-    border: none; /* Remove a borda do botão */
-    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
-    position: relative; /* Necessário para o posicionamento do círculo */
-    padding-bottom: 0.7%;
+.custom-navbar-nav {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+    display: flex; /* Exibe os itens lado a lado */
+    justify-content: center;
+    align-items: center; /* Alinha verticalmente os itens */
+    background-color: transparent !important; /* Mantém a cor de fundo transparente */
+    position: absolute;
+    left: 40%;
+    top: 50px;
+   
 }
 
-/* Remove o estilo de hover que está influenciando o botão */
-.navFaq #botãoNav:hover {
-    background: transparent; /* Garante que não haja fundo ao passar o mouse */
+.custom-nav-item {
+    margin-right: 25px; /* Espaçamento entre os itens */
 }
 
-/* Se precisar, pode adicionar mais regras para hover */
-.navFaq #botãoNav:hover img {
-    filter:invert(0.7); /* Exemplo: mudar a cor da imagem ao passar o mouse */
+.custom-nav-link {
+    color: #bacaff; /* Define a cor do texto como branco */
+    background-color: transparent !important; /* Remove a cor de fundo */
+    border: none !important; /* Remove a borda do botão */
+    padding: 0; /* Remove o preenchimento interno do botão */
+    font-size: 20px; /* Tamanho da fonte */
+    font-weight: bold; /* Fonte em negrito */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    
 }
 
-button img {
-    height: 45px; /* Ajusta a altura da imagem do botão */
-    filter: invert(); /* Inverte a cor da imagem */
+.custom-nav-link:hover {
+    color: #330099 !important; /* Define a cor ao passar o mouse */
+    font-weight: bold; /* Mantém o peso da fonte ao passar o mouse */
 }
 
 .highlight {
     color: rgb(255, 208, 0); /* Define a cor amarela */
-}
-
-
-.UserText {
-    font-size: 15px;
-    color: rgb(236, 231, 240);
-    font-weight: lighter;
-    display: inline; /* Faz o elemento se comportar como inline */
-    position: absolute;
-    top: 20px;
-    right: 80px;
-    width: 100%;
 }

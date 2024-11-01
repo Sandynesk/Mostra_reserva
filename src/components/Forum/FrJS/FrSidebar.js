@@ -28,11 +28,11 @@ const FrSidebar = () => {
             <img src={LupaIcon} alt="Descubra" className="lupa-icon" />
             Descubra
         </a></li>
-        <li><a href="#">
+        <li><a href="/faq">
             <img src={AjudaIcon} alt="Ajuda" className="ajuda-icon" />
             Ajuda
         </a></li>
-        <li><a href="#">
+        <li><a href="https://api.whatsapp.com/send?phone=5571985288558">
             <img src={ContatoIcon} alt="Contato" className="contato-icon" />
             Contato
         </a></li>
@@ -44,7 +44,7 @@ const FrSidebar = () => {
     
     <ul>
     <li>
-            <a href="#">
+            <a href="/faq">
                 <img src={FaqIcon} alt="FAQ" className="faq-icon" />
                 FAQ
             </a>
@@ -56,7 +56,7 @@ const FrSidebar = () => {
             </a>
         </li>
         <li>
-            <a href="#">
+            <a href="/perfil">
                 <img src={ConfigIcon} alt="Configurações" className="config-icon" />
                 Configurações
             </a>
