@@ -20,7 +20,7 @@ function Contsaiba() {
       </div>
 
         <div className='Bloquinho-conteiner'>
-            <h1 id='Titulo-bloquinho'>Como funciona o <span className="consu">Consu</span><span className="web">Web?</span></h1>
+            <h1 id='Titulo-bloquinho'>Espero que goste do <span className="consu">Consu</span><span className="web">Web!</span></h1>
             <p id='SubTitulo-frente-bloquinho'>O <span className="melhor">melhor</span> forum sobre os direitos do consumidor atualmente!</p>
         </div>
 

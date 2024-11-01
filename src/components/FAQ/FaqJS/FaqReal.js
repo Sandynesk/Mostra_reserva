@@ -13,6 +13,8 @@ function FaqReal() {
     };
 
     return (
+        <>
+      
         <div className="container-faq">
             <h1>Perguntas Frequentes</h1>
             {[
@@ -43,6 +45,14 @@ function FaqReal() {
                 </div>
             ))}
         </div>
+
+        <div className="Saiba-conteiner">
+        <div className="bloco-roxo">
+          <h1 id='Titulo-frente'>Espero que não<span className="consu"> reste</span><span className="web"> dúvidas</span></h1>
+          <p id='SubTitulo-frente'>O <span className="melhor">melhor</span> forum sobre os direitos do consumidor atualmente!</p>
+        </div>
+      </div>
+        </>
     );
 }
 

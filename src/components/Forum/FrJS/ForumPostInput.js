@@ -3,7 +3,8 @@ import '../FrCss/ForumPostInput.css'
 
 function ForumInput(){
     return(
-<div class="forum-input-container">
+        <div class="forum-input-container">
+        <h1 className='forum-input-title'><b>Sobre quais direitos deseja falar hoje?</b></h1>
     <input type="text" id="forum-title" placeholder="Título" />
     <textarea id="forum-content" placeholder="Contexto"></textarea>
     <div class="tag-button-container">
