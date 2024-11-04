@@ -13,6 +13,8 @@
     align-items: center;
     margin-bottom: 100px;
     gap: 20px;
+    position: relative;
+    left: -200px;
 }
 
 .container-faq h1 {
@@ -63,4 +65,28 @@
 
 .faq-item.active .answer {
     opacity: 1; /* Torna a resposta visível quando o item está ativo */
+}
+
+.Subtitile-faq {
+    display: flex;
+    position: absolute;
+    left: 75%;
+
+}
+
+
+#Sub-title-faq{
+
+    font-size: 22px;
+    position: absolute;
+    left: 70px;
+    top: 250px;
+    max-width: 70%;
+ 
+}
+
+#Title-faq{
+    position: relative;
+    top: 85px;
+
 }

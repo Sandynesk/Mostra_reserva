@@ -17,6 +17,11 @@ function FaqReal() {
       
         <div className="container-faq">
             <h1>Perguntas Frequentes</h1>
+            <div className="Subtitile-faq">
+                <h1 id="Title-faq">Bem-vindo à Seção de Perguntas Frequentes</h1>
+                <p id="Sub-title-faq">Este espaço foi criado para ajudá-lo a entender melhor nossos serviços e os direitos do consumidor. Explore as perguntas abaixo e encontre as respostas que você precisa!</p>
+            </div>
+
             {[
                 {
                     question: "O que é a sua empresa?",
@@ -42,7 +47,10 @@ function FaqReal() {
                 >
                     <h2 className="question">{item.question}</h2>
                     <p className={`answer ${activeIndexes.includes(index) ? 'show' : ''}`}>{item.answer}</p>
+
                 </div>
+                
+
             ))}
         </div>
 
