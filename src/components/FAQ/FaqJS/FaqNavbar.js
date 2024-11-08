@@ -17,25 +17,6 @@ function FaqNavbar() {
         <div className='pesquisa-containerr'>
           <img src='' id='lupa'></img>
           <input type='text' id="pesquisa" name="pesquisa" placeholder='O que buscas?'></input>
-          
-        </div>
-        <div>
-        <ul className="custom-navbar-nav mb-2 mb-lg-0">
-          <li className="custom-nav-item">
-              <a className="custom-nav-link active" aria-current="page" href="/">Tela Inicial</a>
-          </li>
-          <li className="custom-nav-item">
-              <a className="custom-nav-link" href="saiba">Saiba Mais</a>
-          </li>
-          <li className="custom-nav-item">
-              <a className="custom-nav-link" href="forum">Fórum</a>
-          </li>
-          <li className="custom-nav-item">
-              <a className="custom-nav-link" href="faq">FAQ</a>
-          </li>
-      </ul>
-
-      
         </div>
 
         

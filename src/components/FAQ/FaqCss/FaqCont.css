@@ -1,92 +1,59 @@
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 30px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
 
-.container-faq {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 100px;
-    gap: 20px;
-    position: relative;
-    left: -200px;
-}
+    .container-faq {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
 
-.container-faq h1 {
-    color: #141414;
-    text-align: center;
-    font-size: 2rem;
-    margin: 50px 0 30px; /* Ajustado para um único valor */
-    font-weight: bolder;
-}
+    .container-faq h1 {
+        color: #141414;
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 30px;
+        margin-top: 50px;
+        font-weight: bolder;
+        
+    }
 
-.faq-item {
-    display: flex; /* Para manter o alinhamento */
-    flex-direction: column; /* Coloca o conteúdo em coluna */
-    gap: 0px;
-    padding: 20px;
-    background-color: #cec4e0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, max-height 0.3s ease, opacity 0.3s ease;
-    cursor: pointer;
-    width: 50%; /* Altere para 100% para que o card ocupe a largura total */
-    border-radius: 20px; /* Bordas arredondadas mais sutis */
-    overflow: hidden; /* Esconde o conteúdo que excede a altura */
-    max-height: 60px; /* Altura inicial */
-}
+    .faq-item {
+        gap: 10px;
+        padding: 20px;
+        background-color: #cfd0dd;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+        width: 50%; /* Altere para 100% para que o card ocupe a largura total */
+        border-radius: 0px; /* Bordas arredondadas mais sutis */
+    }
 
-.faq-item:hover {
-    background-color: #9981da;
-}
+    .faq-item:hover {
+        background-color: #9a97c4;
+    }
 
-.faq-item.active {
-    max-height: 300px; /* Altura máxima quando ativo */
-}
+    .question {
+        color: #222222;
+        font-weight: bolder;
+        font-size: 1.5rem; /* Tamanho reduzido para melhor ajuste */
+        margin: 0; /* Remover margens para melhor alinhamento */
+    }
 
-.question {
-    color: #222222;
-    font-weight: bolder;
-    font-size: 1.5rem;
-    margin: 0; /* Remover margens para melhor alinhamento */
-}
+    .answer {
+        color: #383838;         
+        margin-top: 10px;
+        line-height: 1.5;
+        display: none; /* Oculta as respostas inicialmente */
+    }
 
-.answer {
-    color: #383838;
-    margin-top: 10px;
-    line-height: 1.5;
-    opacity: 0; /* Inicialmente invisível */
-    transition: opacity 0.3s ease; /* Suaviza a transição */
-}
-
-.faq-item.active .answer {
-    opacity: 1; /* Torna a resposta visível quando o item está ativo */
-}
-
-.Subtitile-faq {
-    display: flex;
-    position: absolute;
-    left: 75%;
-
-}
-
-
-#Sub-title-faq{
-
-    font-size: 22px;
-    position: absolute;
-    left: 70px;
-    top: 250px;
-    max-width: 70%;
- 
-}
-
-#Title-faq{
-    position: relative;
-    top: 85px;
-
-}
+    .faq-item.active .answer {
+        display: block; /* Exibe a resposta quando o card estiver ativo */
+        margin-top: 10px; /* Margem acima da resposta para espaçamento */
+    }

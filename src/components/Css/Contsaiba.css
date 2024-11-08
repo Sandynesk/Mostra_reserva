@@ -37,8 +37,7 @@
 
 .Saiba-conteiner-info{
     display: flex;
-    justify-content: left;
-    text-align: justify;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
    margin-top: 100px;
