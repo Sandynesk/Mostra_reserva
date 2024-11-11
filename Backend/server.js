@@ -6,6 +6,7 @@ const authRoutes = require('./routes/authRoutes');
 const userRoutes = require('./routes/userRoutes');
 const { verifyToken } = require('./middleware/auth'); // Importa o middleware
 const db = require('./modules/db'); // Importa a conexão com o banco de dados
+const pserverRoutes = require('./routes/pserverRoutes')
 
 const app = express();
 app.use(express.json());
@@ -23,6 +24,7 @@ app.use(cors());
 // Rotas
 app.use('/api/auth', authRoutes);
 app.use('/api/user', userRoutes);
+app.use('/api/pserver', pserverRoutes);
 
 // Exemplo de rota protegida usando o middleware
 app.get('/protected', verifyToken, (req, res) => {
@@ -39,3 +41,7 @@ if (require.main === module) {
     console.log(`Servidor rodando na porta ${PORT}`);
   });
 }
+
+app.get('/api/pserver/FormPostInput', (req, res) => {
+  res.send('A rota existe!!!')
+})
