@@ -9,9 +9,7 @@ O **ConsuWeb** é uma plataforma educacional desenvolvida para promover a consci
 ### Desenvolvedores
 - **Carlos Eduardo Guia**
 - **Emanuel Marinho**
-- **Maria Eduarda Campos**
 - **Pedro Henrique Pereira**
-- **Vivian de Deus**
 
 ### Orientador
 **Prof. Leandro Cruz**
@@ -30,6 +28,8 @@ O **ConsuWeb** é uma plataforma educacional desenvolvida para promover a consci
 4. [Testes](#testes)
     - [Plano de Testes](#plano-de-testes)
     - [Casos de Teste](#casos-de-teste)
+
+[Documentação do Google Docs](https://docs.google.com/document/d/1poOjWC3JMeCdLEtvofL_caSJJOGUxtXCrh3Qsdhiuh4/edit?pli=1&tab=t.0)
 
 ---
 
